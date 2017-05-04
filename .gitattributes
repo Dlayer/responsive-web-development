@@ -1,0 +1,17 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# PHP Project
+*.php text
+*.phtml text
+*.js text
+*.sass text
+*.sql text
+*.css text
+
+# Images should be treated as binary
+# (binary is a macro for -text -diff)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
