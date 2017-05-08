@@ -1,5 +1,5 @@
 {
-    "name": "dlayer/skeleton-application",
+    "name": "dlayer/responsive-web-devlopment",
     "description": "Dlayer: Web Development Simplified (Migration project from ZF1)",
     "type": "project",
     "license": "MIT",
@@ -7,7 +7,9 @@
         "website-builder",
         "dlayer",
         "form-builder",
-        "zf"
+        "zf",
+        "zf3",
+        "zend"
     ],
     "homepage": "http://dlayer.com",
     "require": {
