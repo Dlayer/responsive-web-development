@@ -1,0 +1,9 @@
+{
+    "name": "Dlayer",
+    "version": "2.0.0",
+    "description": "Dlayer migration to ZF3",
+    "license": "MIT",
+    "dependencies": {
+        "bootstrap": "4.0.0-alpha.6"
+    }
+}

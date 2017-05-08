@@ -1,0 +1,24 @@
+{
+    "name": "dlayer/responsive-web-development",
+    "description": "Dlayer: Web Development Simplified (Migration project from ZF1)",
+    "type": "project",
+    "license": "MIT",
+    "keywords": [
+        "website-builder",
+        "dlayer",
+        "form-builder",
+        "zf",
+        "zf3",
+        "zend"
+    ],
+    "homepage": "http://dlayer.com",
+    "require": {
+        "deanblackborough/php-quill-renderer": "v0.*.*",
+        "zendframework/zendframework": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Application\\": "module/Application/src/"
+        }
+    }
+}
