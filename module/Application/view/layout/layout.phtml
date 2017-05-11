@@ -17,36 +17,125 @@
 
         <!-- Scripts -->
         <?php echo $this->headScript()
-            ->prependFile($this->basePath('node_modules/jquery/dist/jquery.js'))
-            ->prependFile($this->basePath('node_modules/bootstrap/dist/js/bootstrap.js'));
+            ->prependFile($this->basePath('node_modules/bootstrap/dist/js/bootstrap.js'))
+            ->prependFile($this->basePath('node_modules/jquery/dist/jquery.js'));
         ?>
     </head>
     <body>
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="<?= $this->url('home') ?>">
-                        <img src="<?= $this->basePath('img/zf-logo-mark.svg') ?>" height="28" alt="Zend Framework <?= \Application\Module::VERSION ?>"/>&nbsp;Skeleton Application
-                    </a>
-                </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="<?= $this->url('home') ?>">Home</a></li>
+
+        <div class="container-fluid header">
+            <nav class="navbar navbar-toggleable-md navbar-light">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="/">Dlayer</a>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Item 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Item 2</a>
+                        </li>
                     </ul>
                 </div>
+            </nav>
+        </div>
+        <div class="header" style="background-color:#828282; border-top: 1px solid #000000; border-bottom: 1px solid #000000; padding: 3rem 1rem; color:#ffffff; margin-bottom: 2rem;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="display-2">Dlayer</h1>
+                        <h2>Web development simplified</h2>
+                        <p class="lead">Dlayer is an Open Source responsive web development tool aimed primarily at users with limited web design or development experience.</p>
+                    </div>
+                </div>
             </div>
-        </nav>
+        </div>
         <div class="container">
-            <?php echo $this->content; ?>
-            <hr>
-            <footer>
-                <p>&copy; 2005 - <?php echo date('Y'); ?> by Zend Technologies Ltd. All rights reserved.</p>
-            </footer>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Sign in <small>and start playing with the demo</small></h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Username</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="joe@bloggs.com" />
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Password label</label>
+                            <input type="password" class="form-control" id="formGroupExampleInput2" />
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </form>
+
+                    <h3 style="margin-top:2rem;">Test credentials</h3>
+                    <p>Please use one of the below to sign in to the demo.</p>
+
+                    <ul>
+                        <li>
+                            user-1@dlayer.com / password-1
+                            <span class="badge badge-success">Account free</span>
+                        </li>
+                        <li>
+                            user-2@dlayer.com / password-2
+                            <span class="badge badge-success">Account free</span>
+                        </li>
+                        <li>
+                            user-3@dlayer.com / password-3
+                            <span class="badge badge-success">Account free</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <h2>Release history</h2>
+
+                    <h3>v1.17 [Name] [Date]</h3>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+
+                    <h3>v1.16 [Name] [Date]</h3>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+
+                    <h3>v1.15 [Name] [Date]</h3>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+
+                    <hr />
+
+                    <h4>And the older releases.</h4>
+                </div>
+            </div>
+        </div>
+        <div class="footer" style="margin-top: 3rem;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center text-muted">
+                        <hr />
+                        <p>Dlayer originally developed by
+                            <a href="http://www.g3d-development.com/blog/">G3D
+                                Development Limited</a> /
+                            <a href="http://www.deanblackborough.com">Dean
+                                Blackborough</a><br>
+                            Dlayer Copyright © G3D Development <?php echo date('Y'); ?><br>
+                            Maintained by <a href="http://www.deanblackborough.com/">Dean Blackborough</a>,
+                            Code <a href="https://github.com/Dlayer/dlayer/blob/master/LICENSE">licensed</a> under MIT</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <?php echo $this->inlineScript() ?>
     </body>
