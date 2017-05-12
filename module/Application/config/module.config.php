@@ -34,11 +34,22 @@ return [
                     ],
                 ],
             ],
+            'application/admin' => [
+                'type'    => Segment::class,
+                'options' => [
+                    'route'    => '/application/admin[/:action]',
+                    'defaults' => [
+                        'controller' => Controller\AdminController::class,
+                        'action'     => 'index',
+                    ],
+                ],
+            ],
         ],
     ],
     'controllers' => [
         'factories' => [
             Controller\IndexController::class => InvokableFactory::class,
+            Controller\AdminController::class => InvokableFactory::class,
         ],
     ],
     'view_manager' => [

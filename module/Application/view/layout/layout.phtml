@@ -49,9 +49,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="display-2">Dlayer</h1>
-                        <h2>Web development simplified</h2>
-                        <p class="lead">Dlayer is an Open Source responsive web development tool aimed primarily at users with limited web design or development experience.</p>
+                        <h1 class="display-2"><?php echo $this->escapeHtml($this->layout()->title); ?></h1>
+                        <h2><?php echo $this->escapeHtml($this->layout()->sub_title); ?></h2>
+                        <p class="lead"><?php echo $this->escapeHtml($this->layout()->tag_line); ?></p>
                     </div>
                 </div>
             </div>

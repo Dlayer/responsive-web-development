@@ -49,8 +49,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="display-2">[Section name]</h1>
-                        <p class="lead">[Relevant text]</p>
+                        <h1 class="display-2"><?php echo $this->escapeHtml($this->layout()->title); ?></h1>
+                        <p class="lead"><?php echo $this->escapeHtml($this->layout()->tag_line); ?></p>
                     </div>
                 </div>
             </div>
