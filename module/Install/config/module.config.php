@@ -5,41 +5,20 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Application;
+namespace Install;
 
-use Zend\Router\Http\Literal;
 use Zend\Router\Http\Segment;
 use Zend\ServiceManager\Factory\InvokableFactory;
 
 return [
     'router' => [
         'routes' => [
-            'home' => [
-                'type' => Literal::class,
-                'options' => [
-                    'route'    => '/',
-                    'defaults' => [
-                        'controller' => Controller\IndexController::class,
-                        'action'     => 'index',
-                    ],
-                ],
-            ],
-            'application' => [
+            'install/index' => [
                 'type'    => Segment::class,
                 'options' => [
-                    'route'    => '/application[/:action]',
+                    'route'    => '/install/index[/:action]',
                     'defaults' => [
                         'controller' => Controller\IndexController::class,
-                        'action'     => 'index',
-                    ],
-                ],
-            ],
-            'application/admin' => [
-                'type'    => Segment::class,
-                'options' => [
-                    'route'    => '/application/admin[/:action]',
-                    'defaults' => [
-                        'controller' => Controller\AdminController::class,
                         'action'     => 'index',
                     ],
                 ],
@@ -48,8 +27,7 @@ return [
     ],
     'controllers' => [
         'factories' => [
-            Controller\IndexController::class => InvokableFactory::class,
-            Controller\AdminController::class => InvokableFactory::class,
+            Controller\IndexController::class => InvokableFactory::class
         ],
     ],
     'view_manager' => [
@@ -60,8 +38,6 @@ return [
         'exception_template'       => 'error/index',
         'template_map' => [
             'layout/layout'           => __DIR__ . '/../view/layout/layout.phtml',
-            'layout/content'          => __DIR__ . '/../view/layout/layout-app-content.phtml',
-            'layout/app'              => __DIR__ . '/../view/layout/layout-app.phtml',
             'error/404'               => __DIR__ . '/../view/error/404.phtml',
             'error/index'             => __DIR__ . '/../view/error/index.phtml',
         ],
