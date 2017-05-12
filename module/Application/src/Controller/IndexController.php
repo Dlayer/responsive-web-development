@@ -18,7 +18,11 @@ class IndexController extends AbstractActionController
             'title' => 'Dlayer',
             'sub_title' => 'Web development simplified',
             'tag_line' => 'Dlayer is an Open Source responsive web development tool 
-            aimed primarily at users with limited web design or development experience.'
+                aimed primarily at users with limited web design or development experience.',
+            'nav' => [
+                [ 'name' => 'Demo', 'uri' => '/', 'active' => true ],
+                [ 'name' => 'Install', 'uri' => '/', 'active' => false ],
+            ]
         ]);
 
         return new ViewModel();
@@ -27,11 +31,15 @@ class IndexController extends AbstractActionController
     public function homeAction()
     {
         $this->layout()->setVariables([
-                'title' => 'Dlayer demo',
-                'tag_line' => 'I have one very simple goal for this demo; I want to showcase the fundamental idea 
-                    behind Dlayer, to show how simple the process of creating a custom responsive website can and 
-                    should be.'
-            ])->setTemplate('layout/content');
+            'title' => 'Dlayer demo',
+            'tag_line' => 'I have one very simple goal for this demo; I want to showcase the fundamental idea 
+                behind Dlayer, to show how simple the process of creating a custom responsive website can and 
+                should be.',
+            'nav' => [
+                [ 'name' => 'Demo', 'uri' => '/', 'active' => true ],
+                [ 'name' => 'Install', 'uri' => '/', 'active' => false ],
+            ]
+        ])->setTemplate('layout/content');
 
         return new ViewModel();
     }

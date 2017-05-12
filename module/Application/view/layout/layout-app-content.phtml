@@ -1,22 +1,20 @@
-<?= $this->doctype() ?>
+<?php echo $this->doctype() ?>
 
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <?php echo $this->headTitle('Dlayer')->setSeparator(' : ')->setAutoEscape(false); ?>
+        <?php
+        echo $this->headTitle('Dlayer')->setSeparator(' : ')->setAutoEscape(false);
 
-        <?php echo $this->headMeta()
+        echo $this->headMeta()
             ->appendName('viewport', 'width=device-width, initial-scale=1.0')
             ->appendHttpEquiv('X-UA-Compatible', 'IE=edge');
-        ?>
 
-        <!-- Le styles -->
-        <?php echo $this->headLink(['rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/images/favicon.ico'])
-            ->prependStylesheet($this->basePath('node_modules/bootstrap/dist/css/bootstrap.css'));
-        ?>
+        echo $this->headLink(['rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/images/favicon.ico'])
+            ->prependStylesheet($this->basePath('node_modules/bootstrap/dist/css/bootstrap.css'))
+            ->prependStylesheet($this->basePath('css/site.css'));
 
-        <!-- Scripts -->
-        <?php echo $this->headScript()
+        echo $this->headScript()
             ->prependFile($this->basePath('node_modules/bootstrap/dist/js/bootstrap.js'))
             ->prependFile($this->basePath('node_modules/jquery/dist/jquery.js'));
         ?>
