@@ -5,7 +5,7 @@
  * @license https://github.com/Dlayer/responsive-web-development/blob/master/LICENSE
  */
 
-namespace Application\Controller;
+namespace Install\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
@@ -16,7 +16,6 @@ class IndexController extends AbstractActionController
     {
         $this->layout()->setVariables([
             'title' => 'Dlayer',
-            'sub_title' => 'Web development simplified',
             'tag_line' => 'Dlayer is an Open Source responsive web development tool 
                 aimed primarily at users with limited web design or development experience.',
             'nav' => [
@@ -24,22 +23,6 @@ class IndexController extends AbstractActionController
                 [ 'name' => 'Install', 'uri' => '/', 'active' => false ],
             ]
         ]);
-
-        return new ViewModel();
-    }
-
-    public function homeAction()
-    {
-        $this->layout()->setVariables([
-            'title' => 'Dlayer demo',
-            'tag_line' => 'I have one very simple goal for this demo; I want to showcase the fundamental idea 
-                behind Dlayer, to show how simple the process of creating a custom responsive website can and 
-                should be.',
-            'nav' => [
-                [ 'name' => 'Demo', 'uri' => '/', 'active' => true ],
-                [ 'name' => 'Install', 'uri' => '/', 'active' => false ],
-            ]
-        ])->setTemplate('layout/content');
 
         return new ViewModel();
     }
