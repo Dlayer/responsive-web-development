@@ -19,7 +19,8 @@
     "autoload": {
         "psr-4": {
             "Application\\": "module/Application/src/",
-            "Install\\": "module/Install/src/"
+            "Install\\": "module/Install/src/",
+            "Content\\": "module/Content/src/"
         }
     }
 }
