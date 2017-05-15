@@ -38,9 +38,7 @@ return [
         'not_found_template'       => 'error/404',
         'exception_template'       => 'error/index',
         'template_map' => [
-            'layout/content'          => __DIR__ . '/../view/layout/content.phtml',
-            'error/404'               => __DIR__ . '/../view/error/404.phtml',
-            'error/index'             => __DIR__ . '/../view/error/index.phtml',
+            'layout/content'          => __DIR__ . '/../view/layout/content.phtml'
         ],
         'template_path_stack' => [
             __DIR__ . '/../view',

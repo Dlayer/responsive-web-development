@@ -69,4 +69,12 @@ return [
             __DIR__ . '/../view',
         ],
     ],
+    'view_helpers' => [
+        'factories' => [
+            View\Helper\TestHelper::class => InvokableFactory::class
+        ],
+        'aliases' => [
+            'testHelper' => View\Helper\TestHelper::class
+        ]
+    ]
 ];
