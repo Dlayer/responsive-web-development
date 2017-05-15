@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "258e841ae9f429ac563c715e8edc8033",
+    "content-hash": "a03f135eec146071dbcf8d05a7035cc3",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -84,6 +84,50 @@
                 "renderer"
             ],
             "time": "2017-04-25T18:34:17+00:00"
+        },
+        {
+            "name": "deanblackborough/zf3-view-helpers",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/deanblackborough/zf3-view-helpers.git",
+                "reference": "7f3ca895f3aa38d6c3454199818e7b1009a0b031"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/deanblackborough/zf3-view-helpers/zipball/7f3ca895f3aa38d6c3454199818e7b1009a0b031",
+                "reference": "7f3ca895f3aa38d6c3454199818e7b1009a0b031",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DBlackborough\\Zf3ViewHelpers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dean Blackborough",
+                    "email": "dean@g3d-development.com"
+                }
+            ],
+            "description": "A collection of view helpers for ZF3",
+            "homepage": "https://github.com/deanblackborough/zf3-view-helpers",
+            "keywords": [
+                "view helpers",
+                "zf3"
+            ],
+            "time": "2017-05-15 20:53:46"
         },
         {
             "name": "doctrine/instantiator",
@@ -5529,7 +5573,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "deanblackborough/zf3-view-helpers": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

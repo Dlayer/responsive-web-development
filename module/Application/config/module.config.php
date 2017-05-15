@@ -10,6 +10,7 @@ namespace Application;
 use Zend\Router\Http\Literal;
 use Zend\Router\Http\Segment;
 use Zend\ServiceManager\Factory\InvokableFactory;
+use DBlackborough\Zf3ViewHelpers;
 
 return [
     'router' => [
@@ -71,10 +72,12 @@ return [
     ],
     'view_helpers' => [
         'factories' => [
-            View\Helper\TestHelper::class => InvokableFactory::class
+            View\Helper\TestHelper::class => InvokableFactory::class,
+            Zf3ViewHelpers\TestHelper::class => InvokableFactory::class
         ],
         'aliases' => [
-            'testHelper' => View\Helper\TestHelper::class
+            'testHelper' => View\Helper\TestHelper::class,
+            'composerTestHelper' => Zf3ViewHelpers\TestHelper::class
         ]
     ]
 ];
