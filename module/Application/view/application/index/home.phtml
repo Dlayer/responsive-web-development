@@ -2,8 +2,19 @@
     <div class="col-lg-12">
         <h1>Home</h1>
 
-        <?php echo $this->testHelper()->render(); ?>
-        <?php echo $this->testHelper()->render(); ?>
-        <?php echo $this->composerTestHelper()->render(); ?>
+        <?php echo $this->bootstrap4JumbotronHelper(
+            'Heading',
+            '<p class="lead">This is an example of a jumbotron</p>'
+        ); ?>
+
+        <?php echo $this->bootstrap4JumbotronHelper(
+            'Heading',
+            '<p class="lead">This is an example of a jumbotron</p>'
+        )->fluid(); ?>
+
+        <?php echo $this->bootstrap4JumbotronHelper(
+            'Heading',
+            '<p class="lead">This is an example of a jumbotron</p>'
+        )->headingDisplayLevel(1); ?>
     </div>
 </div>

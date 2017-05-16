@@ -73,11 +73,11 @@ return [
     'view_helpers' => [
         'factories' => [
             View\Helper\TestHelper::class => InvokableFactory::class,
-            Zf3ViewHelpers\TestHelper::class => InvokableFactory::class
+            Zf3ViewHelpers\TestHelper::class => InvokableFactory::class,
+            Zf3ViewHelpers\Bootstrap4Jumbotron::class => InvokableFactory::class
         ],
         'aliases' => [
-            'testHelper' => View\Helper\TestHelper::class,
-            'composerTestHelper' => Zf3ViewHelpers\TestHelper::class
+            'bootstrap4JumbotronHelper' => Zf3ViewHelpers\Bootstrap4Jumbotron::class
         ]
     ]
 ];
