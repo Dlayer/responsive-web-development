@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a03f135eec146071dbcf8d05a7035cc3",
+    "content-hash": "5d994765c50d6ce47d808727aa2e9c3a",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -87,16 +87,16 @@
         },
         {
             "name": "deanblackborough/zf3-view-helpers",
-            "version": "dev-master",
+            "version": "v0.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/deanblackborough/zf3-view-helpers.git",
-                "reference": "f467723c6a48629f3460bbc455da689eb9c4d763"
+                "reference": "b55d98f5a69a86755f5526643d01c3c48cc5e973"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/deanblackborough/zf3-view-helpers/zipball/f467723c6a48629f3460bbc455da689eb9c4d763",
-                "reference": "f467723c6a48629f3460bbc455da689eb9c4d763",
+                "url": "https://api.github.com/repos/deanblackborough/zf3-view-helpers/zipball/b55d98f5a69a86755f5526643d01c3c48cc5e973",
+                "reference": "b55d98f5a69a86755f5526643d01c3c48cc5e973",
                 "shasum": ""
             },
             "require": {
@@ -130,7 +130,7 @@
                 "zend",
                 "zf3"
             ],
-            "time": "2017-05-16 18:48:02"
+            "time": "2017-05-16T21:06:22+00:00"
         },
         {
             "name": "doctrine/instantiator",
@@ -5576,9 +5576,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "deanblackborough/zf3-view-helpers": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
