@@ -2,6 +2,10 @@
     <div class="col-lg-12">
         <h1>Home</h1>
 
+        <?php echo $this->bootstrap4ButtonHelper('Button')->
+            setStyle('info')->
+            link('http://www.google.com'); ?>
+
         <?php echo $this->bootstrap4JumbotronHelper(
             'Heading',
             '<p class="lead">This is an example of a jumbotron</p>'
