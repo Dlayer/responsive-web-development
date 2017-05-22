@@ -14,7 +14,7 @@
     "homepage": "http://dlayer.com",
     "require": {
         "deanblackborough/php-quill-renderer": "v0.*.*",
-        "deanblackborough/zf3-view-helpers": "v0.20.x-dev",
+        "deanblackborough/zf3-view-helpers": "v0.*.*",
         "zendframework/zendframework": "^3.0"
     },
     "autoload": {
