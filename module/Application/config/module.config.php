@@ -73,11 +73,13 @@ return [
     'view_helpers' => [
         'factories' => [
             Zf3ViewHelpers\Bootstrap4Jumbotron::class => InvokableFactory::class,
-            Zf3ViewHelpers\Bootstrap4Button::class => InvokableFactory::class
+            Zf3ViewHelpers\Bootstrap4Button::class => InvokableFactory::class,
+            Zf3ViewHelpers\Bootstrap4NavbarLite::class => InvokableFactory::class
         ],
         'aliases' => [
-            'bootstrap4JumbotronHelper' => Zf3ViewHelpers\Bootstrap4Jumbotron::class,
-            'bootstrap4ButtonHelper' => Zf3ViewHelpers\Bootstrap4Button::class
+            'bootstrap4Jumbotron' => Zf3ViewHelpers\Bootstrap4Jumbotron::class,
+            'bootstrap4Button' => Zf3ViewHelpers\Bootstrap4Button::class,
+            'bootstrap4NavbarLite' => Zf3ViewHelpers\Bootstrap4NavbarLite::class
         ]
     ]
 ];

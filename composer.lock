@@ -87,16 +87,16 @@
         },
         {
             "name": "deanblackborough/zf3-view-helpers",
-            "version": "v0.25",
+            "version": "v0.40",
             "source": {
                 "type": "git",
                 "url": "https://github.com/deanblackborough/zf3-view-helpers.git",
-                "reference": "f13732fb7c7628689ffd8eeef6d974f551c18ab6"
+                "reference": "51d1daefdeb456f357f763da59a8a20520facef8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/deanblackborough/zf3-view-helpers/zipball/f13732fb7c7628689ffd8eeef6d974f551c18ab6",
-                "reference": "f13732fb7c7628689ffd8eeef6d974f551c18ab6",
+                "url": "https://api.github.com/repos/deanblackborough/zf3-view-helpers/zipball/51d1daefdeb456f357f763da59a8a20520facef8",
+                "reference": "51d1daefdeb456f357f763da59a8a20520facef8",
                 "shasum": ""
             },
             "require": {
@@ -130,7 +130,7 @@
                 "zend",
                 "zf3"
             ],
-            "time": "2017-05-22T20:12:38+00:00"
+            "time": "2017-05-24T00:23:23+00:00"
         },
         {
             "name": "doctrine/instantiator",
