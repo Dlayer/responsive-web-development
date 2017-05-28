@@ -1,3 +1,5 @@
+<?php /** @var $this Application\View\Helper\CodeHinting */?>
+
 <div class="row">
     <div class="col-lg-12">
         <h1>Home</h1>
@@ -5,7 +7,7 @@
         <?php echo $this->bootstrap4NavbarLite()->
             addBrand('Dlayer')->
             bgStyle('bg-faded')->
-            addNavigation([ ['uri' => '#', 'label' => 'Item 1', 'active' => false ] ]); ?>
+            addNavigation([ ['uri' => 'http://www.google.com', 'label' => 'Item 1', 'active' => false ] ]); ?>
 
         <?php echo $this->bootstrap4Button('Button')->
             setStyle('info')->
