@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5d994765c50d6ce47d808727aa2e9c3a",
+    "content-hash": "a0f9b6e1c692f2367f727c99e8069c3c",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -39,16 +39,16 @@
         },
         {
             "name": "deanblackborough/php-quill-renderer",
-            "version": "v0.80.1",
+            "version": "v0.90.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/deanblackborough/php-quill-renderer.git",
-                "reference": "10ffb9d2bfa3866a4855e9cefd15a692c967eed4"
+                "reference": "226548fc298cf75087831316080c1e171d84d4ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/deanblackborough/php-quill-renderer/zipball/10ffb9d2bfa3866a4855e9cefd15a692c967eed4",
-                "reference": "10ffb9d2bfa3866a4855e9cefd15a692c967eed4",
+                "url": "https://api.github.com/repos/deanblackborough/php-quill-renderer/zipball/226548fc298cf75087831316080c1e171d84d4ae",
+                "reference": "226548fc298cf75087831316080c1e171d84d4ae",
                 "shasum": ""
             },
             "require": {
@@ -83,7 +83,7 @@
                 "quilljs",
                 "renderer"
             ],
-            "time": "2017-04-25T18:34:17+00:00"
+            "time": "2017-06-06T21:24:00+00:00"
         },
         {
             "name": "deanblackborough/zf3-view-helpers",
@@ -131,6 +131,53 @@
                 "zf3"
             ],
             "time": "2017-05-25T23:29:23+00:00"
+        },
+        {
+            "name": "deanblackborough/zf3-view-helpers-code-completion",
+            "version": "v0.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/deanblackborough/zf3-view-helpers-code-completion.git",
+                "reference": "e18fee27e99957824060783e3595cae6745b86e2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/deanblackborough/zf3-view-helpers-code-completion/zipball/e18fee27e99957824060783e3595cae6745b86e2",
+                "reference": "e18fee27e99957824060783e3595cae6745b86e2",
+                "shasum": ""
+            },
+            "require": {
+                "deanblackborough/zf3-view-helpers": "v0.*.*",
+                "php": "^7.1",
+                "zendframework/zend-view": "^2.9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DBlackborough\\Zf3ViewHelpersCC\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dean Blackborough",
+                    "email": "dean@g3d-development.com"
+                }
+            ],
+            "description": "Helper classes to provide code completion for Zend view helpers and my custom view helpers",
+            "homepage": "https://github.com/deanblackborough/zf3-view-helpers-code-completion",
+            "keywords": [
+                "bootstrap",
+                "code completion",
+                "phpstorm",
+                "view helpers",
+                "zend",
+                "zf3"
+            ],
+            "time": "2017-05-30T18:52:46+00:00"
         },
         {
             "name": "doctrine/instantiator",
@@ -891,16 +938,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "6.1.4",
+            "version": "6.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "42b7f394a8e009516582331b1e03a1aba40175d1"
+                "reference": "16999a1e9a8a25d68f0ab8cc8ab818b043ad5374"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/42b7f394a8e009516582331b1e03a1aba40175d1",
-                "reference": "42b7f394a8e009516582331b1e03a1aba40175d1",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/16999a1e9a8a25d68f0ab8cc8ab818b043ad5374",
+                "reference": "16999a1e9a8a25d68f0ab8cc8ab818b043ad5374",
                 "shasum": ""
             },
             "require": {
@@ -945,7 +992,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.1.x-dev"
+                    "dev-master": "6.2.x-dev"
                 }
             },
             "autoload": {
@@ -971,7 +1018,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2017-05-22T07:45:30+00:00"
+            "time": "2017-06-02T12:24:37+00:00"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -3369,41 +3416,43 @@
         },
         {
             "name": "zendframework/zend-mail",
-            "version": "2.7.3",
+            "version": "2.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-mail.git",
-                "reference": "e92b4bc1cf6fe0fdad571bd7b4af2762414d58ff"
+                "reference": "248230940ab1453b2a532a8fde76c5a6470d7aad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-mail/zipball/e92b4bc1cf6fe0fdad571bd7b4af2762414d58ff",
-                "reference": "e92b4bc1cf6fe0fdad571bd7b4af2762414d58ff",
+                "url": "https://api.github.com/repos/zendframework/zend-mail/zipball/248230940ab1453b2a532a8fde76c5a6470d7aad",
+                "reference": "248230940ab1453b2a532a8fde76c5a6470d7aad",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5 || ^7.0",
+                "ext-iconv": "*",
+                "php": "^7.0 || ^5.6",
                 "zendframework/zend-loader": "^2.5",
                 "zendframework/zend-mime": "^2.5",
                 "zendframework/zend-stdlib": "^2.7 || ^3.0",
                 "zendframework/zend-validator": "^2.6"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8",
+                "phpunit/phpunit": "^6.0.8 || ^5.7.15",
                 "zendframework/zend-coding-standard": "~1.0.0",
                 "zendframework/zend-config": "^2.6",
                 "zendframework/zend-crypt": "^2.6",
                 "zendframework/zend-servicemanager": "^2.7.5 || ^3.0.3"
             },
             "suggest": {
+                "ext-intl": "Handle IDN in AddressList hostnames",
                 "zendframework/zend-crypt": "Crammd5 support in SMTP Auth",
                 "zendframework/zend-servicemanager": "^2.7.5 || ^3.0.3 when using SMTP to deliver messages"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.7-dev",
-                    "dev-develop": "2.8-dev"
+                    "dev-master": "2.8-dev",
+                    "dev-develop": "2.9-dev"
                 },
                 "zf": {
                     "component": "Zend\\Mail",
@@ -3425,7 +3474,7 @@
                 "mail",
                 "zf2"
             ],
-            "time": "2017-02-14T18:03:34+00:00"
+            "time": "2017-06-08T20:03:58+00:00"
         },
         {
             "name": "zendframework/zend-math",
