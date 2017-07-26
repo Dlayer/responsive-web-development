@@ -74,12 +74,16 @@ return [
         'factories' => [
             Zf3ViewHelpers\Bootstrap4Jumbotron::class => InvokableFactory::class,
             Zf3ViewHelpers\Bootstrap4Button::class => InvokableFactory::class,
-            Zf3ViewHelpers\Bootstrap4NavbarLite::class => InvokableFactory::class
+            Zf3ViewHelpers\Bootstrap4NavbarLite::class => InvokableFactory::class,
+            Zf3ViewHelpers\Bootstrap4ProgressBar::class => InvokableFactory::class,
+            Zf3ViewHelpers\Bootstrap4ProgressBarMultiple::class => InvokableFactory::class
         ],
         'aliases' => [
             'bootstrap4Jumbotron' => Zf3ViewHelpers\Bootstrap4Jumbotron::class,
             'bootstrap4Button' => Zf3ViewHelpers\Bootstrap4Button::class,
-            'bootstrap4NavbarLite' => Zf3ViewHelpers\Bootstrap4NavbarLite::class
+            'bootstrap4NavbarLite' => Zf3ViewHelpers\Bootstrap4NavbarLite::class,
+            'bootstrap4ProgressBar' => Zf3ViewHelpers\Bootstrap4ProgressBar::class,
+            'bootstrap4ProgressBarMultiple' => Zf3ViewHelpers\Bootstrap4ProgressBarMultiple::class
         ]
     ]
 ];
