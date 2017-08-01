@@ -22,7 +22,7 @@ class IndexController extends AbstractActionController
                 [ 'name' => 'Demo', 'uri' => '/', 'active' => true ],
                 [ 'name' => 'Install', 'uri' => '/', 'active' => false ],
             ]
-        ]);
+        ])->setTemplate('layout/install');
 
         return new ViewModel();
     }

@@ -13,13 +13,18 @@
     ],
     "homepage": "http://dlayer.com",
     "require": {
-        "deanblackborough/php-quill-renderer": "v0.*.*",
+        "deanblackborough/php-quill-renderer": "^0",
+        "deanblackborough/zf3-view-helpers": "^0",
         "zendframework/zendframework": "^3.0"
+    },
+    "require-dev": {
+        "deanblackborough/zf3-view-helpers-code-completion": "^1.0"
     },
     "autoload": {
         "psr-4": {
             "Application\\": "module/Application/src/",
-            "Install\\": "module/Install/src/"
+            "Install\\": "module/Install/src/",
+            "Content\\": "module/Content/src/"
         }
     }
 }

@@ -5,20 +5,16 @@
  * @license https://github.com/Dlayer/responsive-web-development/blob/master/LICENSE
  */
 
-namespace Application\Controller;
+namespace Content\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 
-class AdminController extends AbstractActionController
+class DesignController extends AbstractActionController
 {
     public function indexAction()
     {
-        $this->layout()->setVariables([
-            'title' => 'Web sites',
-            'tag_line' => 'This section will help you create new web sites or edit the options for all your  
-                existing web sites.'
-        ])->setTemplate('layout/app-content');
+        $this->layout()->setTemplate('layout/content');
 
         return new ViewModel();
     }

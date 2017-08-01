@@ -39,7 +39,7 @@ class IndexController extends AbstractActionController
                 [ 'name' => 'Demo', 'uri' => '/', 'active' => true ],
                 [ 'name' => 'Install', 'uri' => '/', 'active' => false ],
             ]
-        ])->setTemplate('layout/content');
+        ])->setTemplate('layout/app-content');
 
         return new ViewModel();
     }

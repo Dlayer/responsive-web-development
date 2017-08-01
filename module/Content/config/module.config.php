@@ -5,7 +5,7 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Install;
+namespace Content;
 
 use Zend\Router\Http\Literal;
 use Zend\Router\Http\Segment;
@@ -14,12 +14,12 @@ use Zend\ServiceManager\Factory\InvokableFactory;
 return [
     'router' => [
         'routes' => [
-            'install/index' => [
+            'content/design' => [
                 'type'    => Segment::class,
                 'options' => [
-                    'route'    => '/install/index[/:action]',
+                    'route'    => '/content/design[/:action]',
                     'defaults' => [
-                        'controller' => Controller\IndexController::class,
+                        'controller' => Controller\DesignController::class,
                         'action'     => 'index',
                     ],
                 ],
@@ -28,7 +28,7 @@ return [
     ],
     'controllers' => [
         'factories' => [
-            Controller\IndexController::class => InvokableFactory::class
+            Controller\DesignController::class => InvokableFactory::class
         ],
     ],
     'view_manager' => [
@@ -38,7 +38,7 @@ return [
         'not_found_template'       => 'error/404',
         'exception_template'       => 'error/index',
         'template_map' => [
-            'layout/install'          => __DIR__ . '/../view/layout/layout-install.phtml'
+            'layout/content'          => __DIR__ . '/../view/layout/content.phtml'
         ],
         'template_path_stack' => [
             __DIR__ . '/../view',

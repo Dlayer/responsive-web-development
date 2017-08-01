@@ -1,0 +1,77 @@
+<?php echo $this->doctype() ?>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <?php
+    echo $this->headTitle('Dlayer')->setSeparator(' : ')->setAutoEscape(false);
+
+    echo $this->headMeta()
+        ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+        ->appendHttpEquiv('X-UA-Compatible', 'IE=edge');
+
+    echo $this->headLink(['rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/images/favicon.ico'])
+        ->prependStylesheet($this->basePath('node_modules/tether/dist/css/tether.css'))
+        ->prependStylesheet($this->basePath('node_modules/bootstrap/dist/css/bootstrap.css'))
+        ->prependStylesheet($this->basePath('css/site.css'));
+
+    echo $this->headScript()
+        ->prependFile($this->basePath('node_modules/bootstrap/dist/js/bootstrap.js'))
+        ->prependFile($this->basePath('node_modules/tether/dist/js/tether.js'))
+        ->prependFile($this->basePath('node_modules/jquery/dist/jquery.js'));
+    ?>
+</head>
+<body>
+
+<div class="container-fluid">
+    <nav class="navbar navbar-toggleable-md navbar-light">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="/">Dlayer</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Dlayer demo <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Install</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="display-2"><?php echo $this->escapeHtml($this->layout()->title); ?></h1>
+                <p class="lead"><?php echo $this->escapeHtml($this->layout()->tag_line); ?></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <?php echo $this->content; ?>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center text-muted">
+                <hr />
+                <p>Dlayer originally developed by
+                    <a href="http://www.g3d-development.com/blog/">G3D
+                        Development Limited</a> /
+                    <a href="http://www.deanblackborough.com">Dean
+                        Blackborough</a><br>
+                    Dlayer Copyright © G3D Development <?php echo date('Y'); ?><br>
+                    Maintained by <a href="http://www.deanblackborough.com/">Dean Blackborough</a>,
+                    Code <a href="https://github.com/Dlayer/dlayer/blob/master/LICENSE">licensed</a> under MIT</p>
+            </div>
+        </div>
+    </div>
+</div>
+<?php echo $this->inlineScript() ?>
+</body>
+</html>
