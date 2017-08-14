@@ -4,6 +4,8 @@
     "description": "Dlayer migration to ZF3",
     "license": "MIT",
     "dependencies": {
-        "bootstrap": "4.0.0-alpha.6"
+        "bootstrap": "4.0.0-beta",
+        "jquery": "^3.2.1",
+        "popper.js": "^1.11.1"
     }
 }
