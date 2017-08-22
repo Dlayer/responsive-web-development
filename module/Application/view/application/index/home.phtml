@@ -33,6 +33,16 @@
 
         <?php echo $this->bootstrap4ProgressBarMultiple([25, 25])->color(['danger', 'success'])->height(10)->animate()->striped(); ?>
 
-        <?php echo $this->bootstrap4Card('w-50')->setBody('<p>Card</p>'); ?>
+        <?php echo $this->bootstrap4Card('w-50')->
+            setBody('<p>Card</p>')->
+            setHeader('This is a card component'); ?>
+
+        <?php echo $this->bootstrap4Card('', 'width: 20rem;')->
+            addTitleToBody('Card title')->
+            addSubtitleToBody('Card subtitle')->
+            addTextToBody('Some quick example text to build on the card title and make up the bulk of the card\'s content.')->
+            addLinkToBody('Card link', '#')->
+            setHeader('Header')->
+            setFooter('Footer'); ?>
     </div>
 </div>

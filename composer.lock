@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9841ee35f9887407fa2e6bad2949df62",
+    "content-hash": "76dcac69f8fd77bdc89339fff9854df3",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -91,12 +91,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/deanblackborough/zf3-view-helpers.git",
-                "reference": "46123de27e2e0c58fe13f8ced23f9e98bccf2005"
+                "reference": "f6d202473d1eacf389367a169faea42ac55cd640"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/deanblackborough/zf3-view-helpers/zipball/46123de27e2e0c58fe13f8ced23f9e98bccf2005",
-                "reference": "46123de27e2e0c58fe13f8ced23f9e98bccf2005",
+                "url": "https://api.github.com/repos/deanblackborough/zf3-view-helpers/zipball/f6d202473d1eacf389367a169faea42ac55cd640",
+                "reference": "f6d202473d1eacf389367a169faea42ac55cd640",
                 "shasum": ""
             },
             "require": {
@@ -131,20 +131,20 @@
                 "zend",
                 "zf3"
             ],
-            "time": "2017-08-22 00:12:35"
+            "time": "2017-08-22 15:45:33"
         },
         {
             "name": "deanblackborough/zf3-view-helpers-code-completion",
-            "version": "v1.03",
+            "version": "v1.04.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/deanblackborough/zf3-view-helpers-code-completion.git",
-                "reference": "b9c043e7582db12c1da1c212968f6aa3a2aa9d31"
+                "reference": "42b787927a829b88452d7c4be19f0ee9d740d93e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/deanblackborough/zf3-view-helpers-code-completion/zipball/b9c043e7582db12c1da1c212968f6aa3a2aa9d31",
-                "reference": "b9c043e7582db12c1da1c212968f6aa3a2aa9d31",
+                "url": "https://api.github.com/repos/deanblackborough/zf3-view-helpers-code-completion/zipball/42b787927a829b88452d7c4be19f0ee9d740d93e",
+                "reference": "42b787927a829b88452d7c4be19f0ee9d740d93e",
                 "shasum": ""
             },
             "require": {
@@ -180,7 +180,7 @@
                 "zend",
                 "zf3"
             ],
-            "time": "2017-07-26T16:38:21+00:00"
+            "time": "2017-08-22 10:55:31"
         },
         {
             "name": "doctrine/instantiator",
@@ -5221,16 +5221,16 @@
         },
         {
             "name": "zendframework/zend-validator",
-            "version": "2.10.0",
+            "version": "2.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-validator.git",
-                "reference": "07ef29e31353592e99eb32b2feb7248681ffb630"
+                "reference": "010084ddbd33299bf51ea6f0e07f8f4e8bd832a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-validator/zipball/07ef29e31353592e99eb32b2feb7248681ffb630",
-                "reference": "07ef29e31353592e99eb32b2feb7248681ffb630",
+                "url": "https://api.github.com/repos/zendframework/zend-validator/zipball/010084ddbd33299bf51ea6f0e07f8f4e8bd832a8",
+                "reference": "010084ddbd33299bf51ea6f0e07f8f4e8bd832a8",
                 "shasum": ""
             },
             "require": {
@@ -5288,7 +5288,7 @@
                 "validator",
                 "zf2"
             ],
-            "time": "2017-08-14T20:36:46+00:00"
+            "time": "2017-08-22T14:19:23+00:00"
         },
         {
             "name": "zendframework/zend-view",
@@ -5628,7 +5628,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "deanblackborough/zf3-view-helpers": 20
+        "deanblackborough/zf3-view-helpers": 20,
+        "deanblackborough/zf3-view-helpers-code-completion": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

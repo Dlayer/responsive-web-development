@@ -15,6 +15,7 @@
     "require": {
         "deanblackborough/php-quill-renderer": "^0",
         "deanblackborough/zf3-view-helpers": "v0.60.x-dev",
+        "deanblackborough/zf3-view-helpers-code-completion": "v1.04.0.x-dev",
         "zendframework/zendframework": "^3.0"
     },
     "require-dev": {
