@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "76dcac69f8fd77bdc89339fff9854df3",
+    "content-hash": "d3a6cd2456821da4601864e827e52738",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -87,16 +87,16 @@
         },
         {
             "name": "deanblackborough/zf3-view-helpers",
-            "version": "v0.60.x-dev",
+            "version": "v0.61",
             "source": {
                 "type": "git",
                 "url": "https://github.com/deanblackborough/zf3-view-helpers.git",
-                "reference": "f6d202473d1eacf389367a169faea42ac55cd640"
+                "reference": "32cd8e8f8856ffd32cf1c49b3035e4aeff2a9376"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/deanblackborough/zf3-view-helpers/zipball/f6d202473d1eacf389367a169faea42ac55cd640",
-                "reference": "f6d202473d1eacf389367a169faea42ac55cd640",
+                "url": "https://api.github.com/repos/deanblackborough/zf3-view-helpers/zipball/32cd8e8f8856ffd32cf1c49b3035e4aeff2a9376",
+                "reference": "32cd8e8f8856ffd32cf1c49b3035e4aeff2a9376",
                 "shasum": ""
             },
             "require": {
@@ -131,20 +131,20 @@
                 "zend",
                 "zf3"
             ],
-            "time": "2017-08-22 15:45:33"
+            "time": "2017-08-24T23:44:16+00:00"
         },
         {
             "name": "deanblackborough/zf3-view-helpers-code-completion",
-            "version": "v1.04.0.x-dev",
+            "version": "v1.04.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/deanblackborough/zf3-view-helpers-code-completion.git",
-                "reference": "42b787927a829b88452d7c4be19f0ee9d740d93e"
+                "reference": "a4d3d927a217adfa5ed5e6b7f7fe2bc56dc0e800"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/deanblackborough/zf3-view-helpers-code-completion/zipball/42b787927a829b88452d7c4be19f0ee9d740d93e",
-                "reference": "42b787927a829b88452d7c4be19f0ee9d740d93e",
+                "url": "https://api.github.com/repos/deanblackborough/zf3-view-helpers-code-completion/zipball/a4d3d927a217adfa5ed5e6b7f7fe2bc56dc0e800",
+                "reference": "a4d3d927a217adfa5ed5e6b7f7fe2bc56dc0e800",
                 "shasum": ""
             },
             "require": {
@@ -180,7 +180,7 @@
                 "zend",
                 "zf3"
             ],
-            "time": "2017-08-22 10:55:31"
+            "time": "2017-08-22T23:39:57+00:00"
         },
         {
             "name": "doctrine/instantiator",
@@ -2485,21 +2485,21 @@
         },
         {
             "name": "zendframework/zend-diactoros",
-            "version": "1.4.1",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-diactoros.git",
-                "reference": "424a840dc3bedcdeea510b42e056c77c2d6c4bef"
+                "reference": "1d23172f9dc1687a97c195a777b0199f14f7b26e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/424a840dc3bedcdeea510b42e056c77c2d6c4bef",
-                "reference": "424a840dc3bedcdeea510b42e056c77c2d6c4bef",
+                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/1d23172f9dc1687a97c195a777b0199f14f7b26e",
+                "reference": "1d23172f9dc1687a97c195a777b0199f14f7b26e",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.4 || ^7.0",
-                "psr/http-message": "~1.0"
+                "php": "^5.6 || ^7.0",
+                "psr/http-message": "^1.0"
             },
             "provide": {
                 "psr/http-message-implementation": "1.0"
@@ -2507,14 +2507,14 @@
             "require-dev": {
                 "ext-dom": "*",
                 "ext-libxml": "*",
-                "phpunit/phpunit": "^4.6 || ^5.5",
-                "zendframework/zend-coding-standard": "~1.0.0"
+                "phpunit/phpunit": "^5.7.16 || ^6.0.8",
+                "zendframework/zend-coding-standard": "~1.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.4-dev",
-                    "dev-develop": "1.5-dev"
+                    "dev-master": "1.5-dev",
+                    "dev-develop": "1.6-dev"
                 }
             },
             "autoload": {
@@ -2533,7 +2533,7 @@
                 "psr",
                 "psr-7"
             ],
-            "time": "2017-08-17T21:21:00+00:00"
+            "time": "2017-08-22T20:38:56+00:00"
         },
         {
             "name": "zendframework/zend-dom",
@@ -5627,10 +5627,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "deanblackborough/zf3-view-helpers": 20,
-        "deanblackborough/zf3-view-helpers-code-completion": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
