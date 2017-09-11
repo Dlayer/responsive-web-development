@@ -13,12 +13,10 @@
     ],
     "homepage": "http://dlayer.com",
     "require": {
-        "deanblackborough/php-quill-renderer": "^0",
+        "deanblackborough/php-quill-renderer": "^1",
         "deanblackborough/zf3-view-helpers": "^0",
+        "deanblackborough/zf3-view-helpers-code-completion": "^1",
         "zendframework/zendframework": "^3.0"
-    },
-    "require-dev": {
-        "deanblackborough/zf3-view-helpers-code-completion": "^1.0"
     },
     "autoload": {
         "psr-4": {

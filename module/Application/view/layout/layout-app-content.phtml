@@ -11,40 +11,36 @@
             ->appendHttpEquiv('X-UA-Compatible', 'IE=edge');
 
         echo $this->headLink(['rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/images/favicon.ico'])
-            ->prependStylesheet($this->basePath('node_modules/tether/dist/css/tether.css'))
             ->prependStylesheet($this->basePath('node_modules/bootstrap/dist/css/bootstrap.css'))
             ->prependStylesheet($this->basePath('css/site.css'));
 
         echo $this->headScript()
             ->prependFile($this->basePath('node_modules/bootstrap/dist/js/bootstrap.js'))
-            ->prependFile($this->basePath('node_modules/tether/dist/js/tether.js'))
+            ->prependFile($this->basePath('node_modules/popper.js/dist/popper.js'))
             ->prependFile($this->basePath('node_modules/jquery/dist/jquery.js'));
         ?>
     </head>
     <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="/">Dlayer</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="container-fluid">
-            <nav class="navbar navbar-toggleable-md navbar-light">
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand" href="/">Dlayer</a>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Item 1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Item 2</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Item 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Item 2</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <div class="header">
             <div class="container">
                 <div class="row">
