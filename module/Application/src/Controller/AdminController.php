@@ -18,7 +18,7 @@ class AdminController extends AbstractActionController
             'title' => 'Web sites',
             'tag_line' => 'This section will help you create new web sites or edit the options for all your  
                 existing web sites.'
-        ])->setTemplate('layout/app-content');
+        ])->setTemplate('layout/content-only');
 
         return new ViewModel();
     }

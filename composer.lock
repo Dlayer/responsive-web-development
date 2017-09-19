@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "aa92e19b028f59f0bbec74a77d0266a5",
+    "content-hash": "06a9d28c0f3708e4380cb341fc23ca45",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -39,20 +39,20 @@
         },
         {
             "name": "deanblackborough/php-quill-renderer",
-            "version": "v1.01.1",
+            "version": "v2.02.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/deanblackborough/php-quill-renderer.git",
-                "reference": "dd3fcade9987e94182e9faec2aa1ac3628338885"
+                "reference": "000467f0223762d02af8fbada18bf2d37f6e17d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/deanblackborough/php-quill-renderer/zipball/dd3fcade9987e94182e9faec2aa1ac3628338885",
-                "reference": "dd3fcade9987e94182e9faec2aa1ac3628338885",
+                "url": "https://api.github.com/repos/deanblackborough/php-quill-renderer/zipball/000467f0223762d02af8fbada18bf2d37f6e17d7",
+                "reference": "000467f0223762d02af8fbada18bf2d37f6e17d7",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.6 || ^7.0"
+                "php": "^7.1"
             },
             "require-dev": {
                 "phpunit/phpunit": "^6"
@@ -83,7 +83,7 @@
                 "quilljs",
                 "renderer"
             ],
-            "time": "2017-09-11T14:00:03+00:00"
+            "time": "2017-09-18T16:48:36+00:00"
         },
         {
             "name": "deanblackborough/zf3-view-helpers",
