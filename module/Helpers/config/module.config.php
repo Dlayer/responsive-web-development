@@ -10,6 +10,7 @@ namespace Helpers;
 use Zend\Router\Http\Literal;
 use Zend\Router\Http\Segment;
 use Zend\ServiceManager\Factory\InvokableFactory;
+use DBlackborough\Zf3ViewHelpers;
 
 return [
     'router' => [
@@ -24,11 +25,22 @@ return [
                     ],
                 ],
             ],
+            'helpers/demo' => [
+                'type'    => Segment::class,
+                'options' => [
+                    'route'    => '/helpers/demo[/:action]',
+                    'defaults' => [
+                        'controller' => Controller\DemoController::class,
+                        'action'     => 'index',
+                    ],
+                ],
+            ],
         ],
     ],
     'controllers' => [
         'factories' => [
-            Controller\IndexController::class => InvokableFactory::class
+            Controller\IndexController::class => InvokableFactory::class,
+            Controller\DemoController::class => InvokableFactory::class
         ],
     ],
     'view_manager' => [
@@ -43,5 +55,13 @@ return [
         'template_path_stack' => [
             __DIR__ . '/../view',
         ],
+    ],
+    'view_helpers' => [
+        'factories' => [
+            Zf3ViewHelpers\Bootstrap4NavbarLite::class => InvokableFactory::class,
+        ],
+        'aliases' => [
+            'bootstrap4NavbarLite' => Zf3ViewHelpers\Bootstrap4NavbarLite::class,
+        ]
     ]
 ];

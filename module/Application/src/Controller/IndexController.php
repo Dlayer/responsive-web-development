@@ -18,11 +18,10 @@ class IndexController extends AbstractActionController
             'title' => 'Dlayer',
             'sub_title' => 'Web development simplified',
             'tag_line' => 'Dlayer is an Open Source responsive web development tool 
-                aimed primarily at users with limited web design or development experience.',
-            'nav' => [
-                [ 'name' => 'Demo', 'uri' => '/', 'active' => true ],
-                [ 'name' => 'Install', 'uri' => '/', 'active' => false ],
-            ]
+                aimed primarily at users with limited web index or development experience. I am 
+                in the process of migrating Dlayer from Zend Framework 1 to 3, the original project 
+                can be reached below.',
+            'show_links' => true
         ]);
 
         return new ViewModel();
@@ -34,11 +33,7 @@ class IndexController extends AbstractActionController
             'title' => 'Dlayer demo',
             'tag_line' => 'I have one very simple goal for this demo; I want to showcase the fundamental idea 
                 behind Dlayer, to show how simple the process of creating a custom responsive website can and 
-                should be.',
-            'nav' => [
-                [ 'name' => 'Demo', 'uri' => '/', 'active' => true ],
-                [ 'name' => 'Install', 'uri' => '/', 'active' => false ],
-            ]
+                should be.'
         ])->setTemplate('layout/content-only');
 
         return new ViewModel();

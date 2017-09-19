@@ -14,12 +14,12 @@ use Zend\ServiceManager\Factory\InvokableFactory;
 return [
     'router' => [
         'routes' => [
-            'content/design' => [
-                'type'    => Segment::class,
+            'content' => [
+                'type'    => Literal::class,
                 'options' => [
-                    'route'    => '/content/design[/:action]',
+                    'route'    => '/content',
                     'defaults' => [
-                        'controller' => Controller\DesignController::class,
+                        'controller' => Controller\IndexController::class,
                         'action'     => 'index',
                     ],
                 ],
@@ -28,7 +28,7 @@ return [
     ],
     'controllers' => [
         'factories' => [
-            Controller\DesignController::class => InvokableFactory::class
+            Controller\IndexController::class => InvokableFactory::class
         ],
     ],
     'view_manager' => [

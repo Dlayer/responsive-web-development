@@ -5,7 +5,7 @@
  * @license https://github.com/Dlayer/responsive-web-development/blob/master/LICENSE
  */
 
-namespace Helpers\Controller;
+namespace Content\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
@@ -15,10 +15,9 @@ class IndexController extends AbstractActionController
     public function indexAction()
     {
         $this->layout()->setVariables([
-            'title' => 'View helpers',
-            'sub_title' => 'Zend Framework 3 view helpers',
-            'tag_line' => 'View helpers I developed for use in my projects',
-            'show_view_helper_links' => true
+            'title' => 'Dlayer',
+            'sub_title' => 'Content manager',
+            'tag_line' => 'Preview of content manager design',
         ]);
 
         return new ViewModel();
