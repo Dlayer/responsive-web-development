@@ -5,17 +5,15 @@
  * @license https://github.com/Dlayer/responsive-web-development/blob/master/LICENSE
  */
 
-namespace Content\Controller;
+namespace Helpers\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 
-class DesignController extends AbstractActionController
+class IndexController extends AbstractActionController
 {
     public function indexAction()
     {
-        //$this->layout()->setTemplate('layout/default');
-
         return new ViewModel();
     }
 }

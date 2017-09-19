@@ -14,6 +14,6 @@ return [
     'Zend\Router',
     'Zend\Validator',
     'Application',
-    'Install',
-    'Content'
+    'Content',
+    'Helpers'
 ];

@@ -4,16 +4,18 @@
     "type": "project",
     "license": "MIT",
     "keywords": [
+        "dlayer",
         "website-builder",
         "dlayer",
         "form-builder",
         "zf",
         "zf3",
+        "zend-framework",
         "zend"
     ],
     "homepage": "http://dlayer.com",
     "require": {
-        "deanblackborough/php-quill-renderer": "^1",
+        "deanblackborough/php-quill-renderer": "^2",
         "deanblackborough/zf3-view-helpers": "^0",
         "deanblackborough/zf3-view-helpers-code-completion": "^1",
         "zendframework/zendframework": "^3.0"
@@ -21,8 +23,8 @@
     "autoload": {
         "psr-4": {
             "Application\\": "module/Application/src/",
-            "Install\\": "module/Install/src/",
-            "Content\\": "module/Content/src/"
+            "Content\\": "module/Content/src/",
+            "Helpers\\": "module/Helpers/src/"
         }
     }
 }
