@@ -16,7 +16,7 @@
 
         echo $this->headScript()
             ->prependFile($this->basePath('node_modules/bootstrap/dist/js/bootstrap.js'))
-            ->prependFile($this->basePath('node_modules/popper.js/dist/popper.js'))
+            ->prependFile($this->basePath('node_modules/popper.js/dist/umd/popper.js'))
             ->prependFile($this->basePath('node_modules/jquery/dist/jquery.js'));
         ?>
     </head>
