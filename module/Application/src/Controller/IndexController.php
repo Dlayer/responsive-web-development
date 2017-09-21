@@ -21,7 +21,8 @@ class IndexController extends AbstractActionController
                 aimed primarily at users with limited web index or development experience. I am 
                 in the process of migrating Dlayer from Zend Framework 1 to 3, the original project 
                 can be reached below.',
-            'show_links' => true
+            'show_links' => true,
+            'navbar' => $this->navbarVariables()
         ]);
 
         return new ViewModel();
@@ -37,5 +38,14 @@ class IndexController extends AbstractActionController
         ])->setTemplate('layout/content-only');
 
         return new ViewModel();
+    }
+
+    private function navbarVariables()
+    {
+        return [
+            [ 'uri' => '/', 'name' => 'Home', 'active' => true ],
+            [ 'uri' => '/content', 'name' => 'Content Manager'],
+            [ 'uri' => '/helpers', 'name' => 'View helpers']
+        ];
     }
 }

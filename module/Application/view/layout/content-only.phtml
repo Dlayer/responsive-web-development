@@ -29,15 +29,11 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/">Home</a>
+                    <?php foreach($this->layout()->navbar as $item) { ?>
+                        <li class="nav-item<?php if(array_key_exists('active', $item) === true && $item['active'] === true) { echo ' active'; } ?>">
+                        <a class="nav-link" href="<?php echo $this->escapeHtmlAttr($item['uri']); ?>"><?php echo $this->escapeHtml($item['name']); ?></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/content">Content manager</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/helpers">View helpers</a>
-                    </li>
+                    <?php } ?>
                 </ul>
             </div>
         </nav>

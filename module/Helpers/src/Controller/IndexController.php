@@ -18,9 +18,19 @@ class IndexController extends AbstractActionController
             'title' => 'View helpers',
             'sub_title' => 'Zend Framework 3 view helpers',
             'tag_line' => 'View helpers I developed for use in my projects',
-            'show_view_helper_links' => true
+            'show_view_helper_links' => true,
+            'navbar' => $this->navbarVariables()
         ]);
 
         return new ViewModel();
+    }
+
+    private function navbarVariables()
+    {
+        return [
+            [ 'uri' => '/', 'name' => 'Home'],
+            [ 'uri' => '/content', 'name' => 'Content Manager'],
+            [ 'uri' => '/helpers', 'name' => 'View helpers', 'active' => true ]
+        ];
     }
 }
