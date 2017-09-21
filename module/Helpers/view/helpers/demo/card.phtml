@@ -1,0 +1,29 @@
+<?php /** @var $this \DBlackborough\Zf3ViewHelpersCC\CustomAndZend */?>
+
+<div class="row">
+    <div class="col-lg-12">
+        <h2>Card</h2>
+
+        <p>Go back to the helpers <a href="/helpers">root</a>.</p>
+
+        <pre>
+            $this->bootstrap4Card('', 'width: 20rem;')->
+            addTitleToBody('Card title')->
+            addSubtitleToBody('Card subtitle')->
+            addTextToBody('Some quick example text to build on the card title and make up the bulk of the card\'s content.')->
+            addLinkToBody('Card link', '#')->
+            setHeader('Header')->
+            setFooter('Footer');
+        </pre>
+
+        <?php
+        echo $this->bootstrap4Card('', 'width: 20rem;')->
+            addTitleToBody('Card title')->
+            addSubtitleToBody('Card subtitle')->
+            addTextToBody('Some quick example text to build on the card title and make up the bulk of the card\'s content.')->
+            addLinkToBody('Card link', '#')->
+            setHeader('Header')->
+            setFooter('Footer');
+        ?>
+    </div>
+</div>

@@ -55,11 +55,71 @@ class DemoController extends AbstractActionController
     }
 
     /**
+     * Button example
+     *
+     * @return ViewModel
+     */
+    public function buttonAction() : ViewModel
+    {
+        $this->layout()->setVariables($this->jumbotronVariables());
+
+        return new ViewModel();
+    }
+
+    /**
+     * Card example
+     *
+     * @return ViewModel
+     */
+    public function cardAction() : ViewModel
+    {
+        $this->layout()->setVariables($this->jumbotronVariables());
+
+        return new ViewModel();
+    }
+
+    /**
+     * Jumbotron example
+     *
+     * @return ViewModel
+     */
+    public function jumbotronAction() : ViewModel
+    {
+        $this->layout()->setVariables($this->jumbotronVariables());
+
+        return new ViewModel();
+    }
+
+    /**
+     * Multiple progress bars example
+     *
+     * @return ViewModel
+     */
+    public function multipleProgressBarsAction() : ViewModel
+    {
+        $this->layout()->setVariables($this->jumbotronVariables());
+
+        return new ViewModel();
+    }
+
+    /**
      * Navbar example
      *
      * @return ViewModel
      */
     public function navbarAction() : ViewModel
+    {
+        $this->layout()->setVariables($this->jumbotronVariables());
+
+        return new ViewModel();
+    }
+
+    /**
+     * Progress bar example
+     *
+     * @return ViewModel
+     */
+    public function progressBarAction() : ViewModel
     {
         $this->layout()->setVariables($this->jumbotronVariables());
 
