@@ -43,6 +43,18 @@ class DemoController extends AbstractActionController
     }
 
     /**
+     * Badge example
+     *
+     * @return ViewModel
+     */
+    public function badgeAction() : ViewModel
+    {
+        $this->layout()->setVariables($this->jumbotronVariables());
+
+        return new ViewModel();
+    }
+
+    /**
      * Navbar example
      *
      * @return ViewModel

@@ -58,9 +58,11 @@ return [
     ],
     'view_helpers' => [
         'factories' => [
+            Zf3ViewHelpers\Bootstrap4Badge::class => InvokableFactory::class,
             Zf3ViewHelpers\Bootstrap4NavbarLite::class => InvokableFactory::class,
         ],
         'aliases' => [
+            'bootstrap4Badge' => Zf3ViewHelpers\Bootstrap4Badge::class,
             'bootstrap4NavbarLite' => Zf3ViewHelpers\Bootstrap4NavbarLite::class,
         ]
     ]
