@@ -1,0 +1,23 @@
+<?php /** @var $this \DBlackborough\Zf3ViewHelpersCC\CustomAndZend */?>
+
+<div class="row">
+    <div class="col-lg-12">
+        <h2>Jumbotron</h2>
+
+        <p>Go back to the helpers <a href="/helpers">root</a>.</p>
+
+        <pre>
+            $this->bootstrap4Jumbotron(
+                'Heading',
+                '&lt;p class="lead"&gt;This is an example of a jumbotron&lt;/p&gt;')->
+            headingDisplayLevel(1);
+        </pre>
+
+        <?php
+        echo $this->bootstrap4Jumbotron(
+                'Heading',
+                '<p class="lead">This is an example of a jumbotron</p>')->
+            headingDisplayLevel(1);
+        ?>
+    </div>
+</div>

@@ -9,28 +9,48 @@ namespace Content\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
+use Zend\View\View;
 
 class IndexController extends AbstractActionController
 {
-    public function indexAction()
-    {
-        $this->layout()
-            ->setVariables([
-                'title' => 'Dlayer',
-                'sub_title' => 'Content manager',
-                'tag_line' => 'Preview of content manager design',
-                'navbar' => $this->navbarVariables()
-            ]);
-
-        return new ViewModel();
-    }
-
-    private function navbarVariables()
+    /**
+     * Layout variables for the navbar
+     *
+     * @return array
+     */
+    private function navbarVariables() : array
     {
         return [
-            ['uri' => '/', 'name' => 'Home'],
-            ['uri' => '/content', 'name' => 'Content Manager', 'active' => true ],
-            ['uri' => '/helpers', 'name' => 'View helpers']
+            [ 'uri' => '/', 'name' => 'Home'],
+            [ 'uri' => '/content', 'name' => 'Content Manager', 'active' => true ],
+            [ 'uri' => '/helpers', 'name' => 'View helpers']
         ];
+    }
+
+    /**
+     * Layout variable for the header jumbotron
+     *
+     * @return array
+     */
+    private function jumbotronVariables() : array
+    {
+        return [
+            'title' => 'Dlayer',
+            'sub_title' => 'Content manager',
+            'tag_line' => 'Preview of the Content manager design',
+            'navbar' => $this->navbarVariables()
+        ];
+    }
+
+    /**
+     * Root for content manager
+     *
+     * @return \Zend\View\Model\ViewModel
+     */
+    public function indexAction() : ViewModel
+    {
+        $this->layout()->setVariables($this->jumbotronVariables());
+
+        return new ViewModel();
     }
 }

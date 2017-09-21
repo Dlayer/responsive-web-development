@@ -12,9 +12,28 @@ use Zend\View\Model\ViewModel;
 
 class IndexController extends AbstractActionController
 {
-    public function indexAction()
+    /**
+     * Layout variables for the navbar
+     *
+     * @return array
+     */
+    private function navbarVariables() : array
     {
-        $this->layout()->setVariables([
+        return [
+            [ 'uri' => '/', 'name' => 'Home', 'active' => true ],
+            [ 'uri' => '/content', 'name' => 'Content Manager'],
+            [ 'uri' => '/helpers', 'name' => 'View helpers' ]
+        ];
+    }
+
+    /**
+     * Layout variable for the header jumbotron
+     *
+     * @return array
+     */
+    private function jumbotronVariables() : array
+    {
+        return [
             'title' => 'Dlayer',
             'sub_title' => 'Web development simplified',
             'tag_line' => 'Dlayer is an Open Source responsive web development tool 
@@ -23,7 +42,17 @@ class IndexController extends AbstractActionController
                 can be reached below.',
             'show_links' => true,
             'navbar' => $this->navbarVariables()
-        ]);
+        ];
+    }
+
+    /**
+     * Site root
+     *
+     * @return \Zend\View\Model\ViewModel
+     */
+    public function indexAction() : ViewModel
+    {
+        $this->layout()->setVariables($this->jumbotronVariables());
 
         return new ViewModel();
     }
@@ -38,14 +67,5 @@ class IndexController extends AbstractActionController
         ])->setTemplate('layout/content-only');
 
         return new ViewModel();
-    }
-
-    private function navbarVariables()
-    {
-        return [
-            [ 'uri' => '/', 'name' => 'Home', 'active' => true ],
-            [ 'uri' => '/content', 'name' => 'Content Manager'],
-            [ 'uri' => '/helpers', 'name' => 'View helpers']
-        ];
     }
 }

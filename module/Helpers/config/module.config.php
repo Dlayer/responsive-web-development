@@ -40,7 +40,7 @@ return [
     'controllers' => [
         'factories' => [
             Controller\IndexController::class => InvokableFactory::class,
-            Controller\DemoController::class => InvokableFactory::class
+            Controller\DemoController::class => InvokableFactory::class,
         ],
     ],
     'view_manager' => [
@@ -58,9 +58,13 @@ return [
     ],
     'view_helpers' => [
         'factories' => [
+            Zf3ViewHelpers\Bootstrap4Badge::class => InvokableFactory::class,
+            Zf3ViewHelpers\Bootstrap4Button::class => InvokableFactory::class,
             Zf3ViewHelpers\Bootstrap4NavbarLite::class => InvokableFactory::class,
         ],
         'aliases' => [
+            'bootstrap4Badge' => Zf3ViewHelpers\Bootstrap4Badge::class,
+            'bootstrap4Button' => Zf3ViewHelpers\Bootstrap4Button::class,
             'bootstrap4NavbarLite' => Zf3ViewHelpers\Bootstrap4NavbarLite::class,
         ]
     ]
