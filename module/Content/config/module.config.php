@@ -24,11 +24,22 @@ return [
                     ],
                 ],
             ],
+            'content/manager' => [
+                'type'    => Literal::class,
+                'options' => [
+                    'route'    => '/content/manager',
+                    'defaults' => [
+                        'controller' => Controller\ManagerController::class,
+                        'action'     => 'index',
+                    ],
+                ],
+            ],
         ],
     ],
     'controllers' => [
         'factories' => [
-            Controller\IndexController::class => InvokableFactory::class
+            Controller\IndexController::class => InvokableFactory::class,
+            Controller\ManagerController::class => InvokableFactory::class
         ],
     ],
     'view_manager' => [
@@ -38,7 +49,7 @@ return [
         'not_found_template'       => 'error/404',
         'exception_template'       => 'error/index',
         'template_map' => [
-
+            'layout/content-manager'     => __DIR__ . '/../view/layout/content-manager.phtml',
         ],
         'template_path_stack' => [
             __DIR__ . '/../view',
