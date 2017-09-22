@@ -87,16 +87,16 @@
         },
         {
             "name": "deanblackborough/zf3-view-helpers",
-            "version": "v0.62.0",
+            "version": "v0.62.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/deanblackborough/zf3-view-helpers.git",
-                "reference": "5d10f25ab07246155938e49ebb1bd24426eacf75"
+                "reference": "966d02e8364f0ec8150d205162cd3cd9601bb114"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/deanblackborough/zf3-view-helpers/zipball/5d10f25ab07246155938e49ebb1bd24426eacf75",
-                "reference": "5d10f25ab07246155938e49ebb1bd24426eacf75",
+                "url": "https://api.github.com/repos/deanblackborough/zf3-view-helpers/zipball/966d02e8364f0ec8150d205162cd3cd9601bb114",
+                "reference": "966d02e8364f0ec8150d205162cd3cd9601bb114",
                 "shasum": ""
             },
             "require": {
@@ -131,7 +131,7 @@
                 "zend",
                 "zf3"
             ],
-            "time": "2017-09-11T14:39:31+00:00"
+            "time": "2017-09-22T12:20:33+00:00"
         },
         {
             "name": "deanblackborough/zf3-view-helpers-code-completion",
@@ -2985,24 +2985,24 @@
         },
         {
             "name": "zendframework/zend-hydrator",
-            "version": "2.2.2",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-hydrator.git",
-                "reference": "e3ecc4920c1724e1949213163fee82200e8e6f6c"
+                "reference": "7aa33949227fcabb5634a61f97fe78cccbb25c98"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-hydrator/zipball/e3ecc4920c1724e1949213163fee82200e8e6f6c",
-                "reference": "e3ecc4920c1724e1949213163fee82200e8e6f6c",
+                "url": "https://api.github.com/repos/zendframework/zend-hydrator/zipball/7aa33949227fcabb5634a61f97fe78cccbb25c98",
+                "reference": "7aa33949227fcabb5634a61f97fe78cccbb25c98",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0 || ^5.6",
+                "php": "^5.6 || ^7.0",
                 "zendframework/zend-stdlib": "^3.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.0.10 || ^5.7.17",
+                "phpunit/phpunit": "^5.7.21 || ^6.3",
                 "zendframework/zend-coding-standard": "~1.0.0",
                 "zendframework/zend-eventmanager": "^3.0",
                 "zendframework/zend-filter": "^2.6",
@@ -3021,8 +3021,8 @@
                 "branch-alias": {
                     "dev-release-1.0": "1.0-dev",
                     "dev-release-1.1": "1.1-dev",
-                    "dev-master": "2.2-dev",
-                    "dev-develop": "2.3-dev"
+                    "dev-master": "2.3-dev",
+                    "dev-develop": "2.4-dev"
                 },
                 "zf": {
                     "component": "Zend\\Hydrator",
@@ -3043,7 +3043,7 @@
                 "hydrator",
                 "zf2"
             ],
-            "time": "2017-05-17T18:40:45+00:00"
+            "time": "2017-09-20T22:02:25+00:00"
         },
         {
             "name": "zendframework/zend-i18n",
