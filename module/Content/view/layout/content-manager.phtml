@@ -1,10 +1,12 @@
+<?php /** @var $this \DBlackborough\Zf3ViewHelpersCC\CustomAndZend */?>
+
 <?php echo $this->doctype() ?>
 
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <?php
-        echo $this->headTitle('Dlayer')->setSeparator(' : ')->setAutoEscape(false);
+        echo $this->headTitle('Dlayer: Content manager preview');
 
         echo $this->headMeta()
             ->appendName('viewport', 'width=device-width, initial-scale=1.0')
@@ -39,23 +41,6 @@
         </nav>
         <div class="container">
             <?php echo $this->content; ?>
-        </div>
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12 text-center text-muted">
-                        <hr />
-                        <p>Dlayer was originally developed by
-                            <a href="http://www.g3d-development.com/blog/">G3D
-                                Development Limited</a> /
-                            <a href="http://www.deanblackborough.com">Dean
-                                Blackborough</a><br>
-                            Dlayer Copyright © G3D Development <?php echo date('Y'); ?><br>
-                            Maintained by <a href="http://www.deanblackborough.com/">Dean Blackborough</a>,
-                            Code <a href="https://github.com/Dlayer/responsive-web-development/blob/master/LICENSE">licensed</a> under MIT</p>
-                    </div>
-                </div>
-            </div>
         </div>
         <?php echo $this->inlineScript() ?>
     </body>

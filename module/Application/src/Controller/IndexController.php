@@ -56,16 +56,4 @@ class IndexController extends AbstractActionController
 
         return new ViewModel();
     }
-
-    public function homeAction()
-    {
-        $this->layout()->setVariables([
-            'title' => 'Dlayer demo',
-            'tag_line' => 'I have one very simple goal for this demo; I want to showcase the fundamental idea 
-                behind Dlayer, to show how simple the process of creating a custom responsive website can and 
-                should be.'
-        ])->setTemplate('layout/content-only');
-
-        return new ViewModel();
-    }
 }
