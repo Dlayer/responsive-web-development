@@ -61,7 +61,7 @@ return [
         'exception_template'       => 'error/index',
         'template_map' => [
             'layout/layout'           => __DIR__ . '/../view/layout/layout.phtml',
-            'layout/content-only'      => __DIR__ . '/../view/layout/content-only.phtml',
+            'layout/content-only'     => __DIR__ . '/../view/layout/content-only.phtml',
             'error/404'               => __DIR__ . '/../view/error/404.phtml',
             'error/index'             => __DIR__ . '/../view/error/index.phtml',
         ],
@@ -71,20 +71,22 @@ return [
     ],
     'view_helpers' => [
         'factories' => [
-            Zf3ViewHelpers\Bootstrap4Jumbotron::class => InvokableFactory::class,
+            Zf3ViewHelpers\Bootstrap4Badge::class => InvokableFactory::class,
             Zf3ViewHelpers\Bootstrap4Button::class => InvokableFactory::class,
+            Zf3ViewHelpers\Bootstrap4Card::class => InvokableFactory::class,
+            Zf3ViewHelpers\Bootstrap4Jumbotron::class => InvokableFactory::class,
             Zf3ViewHelpers\Bootstrap4NavbarLite::class => InvokableFactory::class,
             Zf3ViewHelpers\Bootstrap4ProgressBar::class => InvokableFactory::class,
             Zf3ViewHelpers\Bootstrap4ProgressBarMultiple::class => InvokableFactory::class,
-            Zf3ViewHelpers\Bootstrap4Card::class => InvokableFactory::class
         ],
         'aliases' => [
-            'bootstrap4Jumbotron' => Zf3ViewHelpers\Bootstrap4Jumbotron::class,
+            'bootstrap4Badge' => Zf3ViewHelpers\Bootstrap4Badge::class,
             'bootstrap4Button' => Zf3ViewHelpers\Bootstrap4Button::class,
+            'bootstrap4Card' => Zf3ViewHelpers\Bootstrap4Card::class,
+            'bootstrap4Jumbotron' => Zf3ViewHelpers\Bootstrap4Jumbotron::class,
+            'bootstrap4ProgressBarMultiple' => Zf3ViewHelpers\Bootstrap4ProgressBarMultiple::class,
             'bootstrap4NavbarLite' => Zf3ViewHelpers\Bootstrap4NavbarLite::class,
             'bootstrap4ProgressBar' => Zf3ViewHelpers\Bootstrap4ProgressBar::class,
-            'bootstrap4ProgressBarMultiple' => Zf3ViewHelpers\Bootstrap4ProgressBarMultiple::class,
-            'bootstrap4Card' => Zf3ViewHelpers\Bootstrap4Card::class
         ]
     ]
 ];
