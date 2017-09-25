@@ -25,9 +25,9 @@ return [
                 ],
             ],
             'content/manager' => [
-                'type'    => Literal::class,
+                'type'    => Segment::class,
                 'options' => [
-                    'route'    => '/content/manager',
+                    'route'    => '/content/manager[/:action]',
                     'defaults' => [
                         'controller' => Controller\ManagerController::class,
                         'action'     => 'index',
@@ -50,6 +50,8 @@ return [
         'exception_template'       => 'error/index',
         'template_map' => [
             'layout/content-manager'     => __DIR__ . '/../view/layout/content-manager.phtml',
+            'layout/content-manager-tool-selected'     => __DIR__ . '/../view/layout/content-manager-tool-selected.phtml',
+            'layout/content-manager-tool-and-item-selected'     => __DIR__ . '/../view/layout/content-manager-tool-and-item-selected.phtml',
         ],
         'template_path_stack' => [
             __DIR__ . '/../view',
