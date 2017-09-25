@@ -40,4 +40,28 @@ class ManagerController extends AbstractActionController
 
         return new ViewModel();
     }
+
+    /**
+     * Sample HTML when a tool is selected and item in edit mode
+     *
+     * @return \Zend\View\Model\ViewModel
+     */
+    public function toolAndItemSelectedAction() : ViewModel
+    {
+        $this->layout()->setVariables($this->layoutVariables())->setTemplate('layout/content-manager');
+
+        return new ViewModel();
+    }
+
+    /**
+     * Sample HTML when a tool is selected
+     *
+     * @return \Zend\View\Model\ViewModel
+     */
+    public function toolSelectedAction() : ViewModel
+    {
+        $this->layout()->setVariables($this->layoutVariables())->setTemplate('layout/content-manager');
+
+        return new ViewModel();
+    }
 }

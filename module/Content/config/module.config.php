@@ -25,9 +25,9 @@ return [
                 ],
             ],
             'content/manager' => [
-                'type'    => Literal::class,
+                'type'    => Segment::class,
                 'options' => [
-                    'route'    => '/content/manager',
+                    'route'    => '/content/manager[/:action]',
                     'defaults' => [
                         'controller' => Controller\ManagerController::class,
                         'action'     => 'index',
