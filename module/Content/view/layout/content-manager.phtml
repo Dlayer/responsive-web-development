@@ -23,13 +23,13 @@
         ?>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
             <a class="navbar-brand" href="/">Dlayer vNext</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTop" aria-controls="navbarTop" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarTop">
                 <ul class="navbar-nav mr-auto">
                     <?php foreach($this->layout()->navbar as $item) { ?>
                         <li class="nav-item<?php if(array_key_exists('active', $item) === true && $item['active'] === true) { echo ' active'; } ?>">
@@ -39,9 +39,37 @@
                 </ul>
             </div>
         </nav>
-        <div class="container">
+        <div class="container-fluid">
             <?php echo $this->content; ?>
         </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom mt-5 pb-3 pt-3">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarBottom" aria-controls="navbarBottom" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarBottom">
+                <div class="btn-group">
+                    <a class="navbar-btn btn btn-danger btn-sm" href="#">Cancel</a>
+                </div>
+                <div class="btn-group btn-group-sm ml-3">
+                    <a class="navbar-btn btn btn-outline-secondary" href="#">Tool 1</a>
+                    <a class="navbar-btn btn btn-outline-secondary" href="#">Tool 2</a>
+                    <a class="navbar-btn btn btn-outline-secondary" href="#">Tool 3</a>
+                </div>
+                <div class="btn-group ml-3">
+                    <a class="navbar-btn btn btn-outline-secondary btn-sm" href="#">Tool 4</a>
+                    <a class="navbar-btn btn btn-outline-secondary btn-sm" href="#">Tool 5</a>
+                </div>
+                <div class="btn-group ml-3">
+                    <a class="navbar-btn btn btn-outline-secondary btn-sm" href="#">Tool 6</a>
+                    <a class="navbar-btn btn btn-outline-secondary btn-sm" href="#">Tool 6</a>
+                    <a class="navbar-btn btn btn-outline-secondary btn-sm" href="#">Tool 7</a>
+                    <a class="navbar-btn btn btn-outline-secondary btn-sm" href="#">Tool 8</a>
+                    <a class="navbar-btn btn btn-outline-secondary btn-sm" href="#">Tool 9</a>
+                    <a class="navbar-btn btn btn-outline-secondary btn-sm" href="#">Tool 10</a>
+                </div>
+            </div>
+        </nav>
         <?php echo $this->inlineScript() ?>
     </body>
 </html>
