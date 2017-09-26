@@ -22,7 +22,7 @@ class ManagerController extends AbstractActionController
     {
         return [
             'navbar' => [
-                [ 'uri' => '/', 'name' => 'Home'],
+                [ 'uri' => '/', 'name' => 'Dlayer vNext'],
                 [ 'uri' => '/content', 'name' => 'Content Manager', 'active' => true ],
                 [ 'uri' => '/helpers', 'name' => 'View helpers']
             ]
