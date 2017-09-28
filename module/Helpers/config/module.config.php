@@ -5,6 +5,8 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
+declare(strict_types=1);
+
 namespace Helpers;
 
 use Zend\Router\Http\Literal;
