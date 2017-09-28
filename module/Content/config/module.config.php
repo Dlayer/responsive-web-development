@@ -53,6 +53,7 @@ return [
             'layout/content-manager-column-selected'     => __DIR__ . '/../view/layout/content-manager-column-selected.phtml',
             'layout/content-manager-tool-selected'     => __DIR__ . '/../view/layout/content-manager-tool-selected.phtml',
             'layout/content-manager-tool-and-item-selected'     => __DIR__ . '/../view/layout/content-manager-tool-and-item-selected.phtml',
+            'layout/content-manager-mock-tools'     => __DIR__ . '/../view/layout/content-manager-mock-tools.phtml',
         ],
         'template_path_stack' => [
             __DIR__ . '/../view',

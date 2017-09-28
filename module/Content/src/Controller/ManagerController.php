@@ -30,18 +30,6 @@ class ManagerController extends AbstractActionController
     }
 
     /**
-     * Root for content manager
-     *
-     * @return \Zend\View\Model\ViewModel
-     */
-    public function indexAction() : ViewModel
-    {
-        $this->layout()->setVariables($this->layoutVariables())->setTemplate('layout/content-manager');
-
-        return new ViewModel();
-    }
-
-    /**
      * Row selected
      *
      * @return \Zend\View\Model\ViewModel
@@ -85,6 +73,18 @@ class ManagerController extends AbstractActionController
     public function toolAndItemSelectedAction() : ViewModel
     {
         $this->layout()->setVariables($this->layoutVariables())->setTemplate('layout/content-manager-tool-and-item-selected');
+
+        return new ViewModel();
+    }
+
+    /**
+     * Mocking up the tools
+     *
+     * @return \Zend\View\Model\ViewModel
+     */
+    public function mockToolsAction() : ViewModel
+    {
+        $this->layout()->setVariables($this->layoutVariables())->setTemplate('layout/content-manager-mock-tools');
 
         return new ViewModel();
     }
