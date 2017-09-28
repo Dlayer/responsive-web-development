@@ -49,7 +49,6 @@ return [
         'not_found_template'       => 'error/404',
         'exception_template'       => 'error/index',
         'template_map' => [
-            'layout/content-manager'     => __DIR__ . '/../view/layout/content-manager.phtml',
             'layout/content-manager-row-selected'     => __DIR__ . '/../view/layout/content-manager-row-selected.phtml',
             'layout/content-manager-column-selected'     => __DIR__ . '/../view/layout/content-manager-column-selected.phtml',
             'layout/content-manager-tool-selected'     => __DIR__ . '/../view/layout/content-manager-tool-selected.phtml',

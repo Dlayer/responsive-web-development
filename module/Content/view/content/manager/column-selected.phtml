@@ -1,109 +1,141 @@
 <div class="row content-manager mb-5">
     <div class="col-xl-9 col-lg-9 col-md-12">
-        <div class="container wysiwyg mb-5" style="border: 1px solid #93d0e1;">
+        <div class="container wysiwyg mb-5">
             <div class="row">
-                <div class="col-md-6">
-                    <h1>Live view, row 1a</h1>
-
-                    <div class="card" style="width: 20rem;">
-                        <div class="card-body">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <h1>Live view, row 1b</h1>
-
-                    <div class="card" style="width: 20rem;">
-                        <div class="card-body">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
+                <div class="col-md-12" style="border: 1px solid #93d0e1;">
+                    <div class="jumbotron">
+                        <h1 class="display-3">Hello, world!</h1>
+                        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling
+                            extra attention to featured content or information.</p>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
-                    <h1>Live view, row 2</h1>
+                <div class="col-md-6">
+                    <p>Morbi ultrices accumsan tortor, quis bibendum metus convallis eu. Phasellus in dictum dui. Cras
+                        bibendum viverra vestibulum. Fusce vel accumsan dui, at blandit sem. Aenean rutrum eu sapien
+                        vel viverra. Sed accumsan convallis tellus id mollis.</p>
 
-                    <div class="jumbotron">
-                        <h1 class="display-3">Hello, world!</h1>
-                        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                        <hr class="my-4">
-                        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                        <p class="lead">
-                            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                        </p>
-                    </div>
+                    <p>Morbi ultrices accumsan tortor, quis bibendum metus convallis eu. Phasellus in dictum dui. Cras
+                        bibendum viverra vestibulum. Fusce vel accumsan dui, at blandit sem. Aenean rutrum eu sapien
+                        vel viverra. Sed accumsan convallis tellus id mollis.</p>
+
+                    <h4>Form</h4>
+
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Row background colour</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">Set the background colour for the row.</small>
+                        </div>
+                        <button type="submit" class="btn btn-success">Save</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h2>Small heading <small>Smaller heading</small></h2>
+
+                    <img src="<?php echo $this->basePath('images/sample.jpg'); ?>" class="img-fluid" alt="Responsive image">
                 </div>
             </div>
         </div>
     </div>
     <div class="col-xl-3 col-lg-3 col-md-12 tool-form">
-        <ul class="nav nav-tabs" id="myTab" role="tablist" style="border-bottom: none;">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item">
-                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-expanded="true">Home</a>
+                <a class="nav-link active" style="padding: 0.3rem 0.8rem;" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-expanded="true"><i class="fa fa-rotate-90 fa-bars" aria-hidden="true"></i></a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile">Profile</a>
+                <a class="nav-link" style="padding: 0.3rem 0.8rem;" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2"><i class="fa fa-tint" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" style="padding: 0.3rem 0.8rem;" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3"><i class="fa fa-wrench" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" style="padding: 0.3rem 0.8rem;" id="tab4-tab" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4"><i class="fa fa-mobile-phone" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" style="padding: 0.3rem 0.8rem;" id="tab5-tab" data-toggle="tab" href="#tab5" role="tab" aria-controls="tab5"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
             </li>
         </ul>
-        <div class="tab-content p-3" id="myTabContent" style="border: 1px solid #ddd;">
-            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                <h2>Home tab</h2>
+        <div class="tab-content p-3" id="myTabContent" style="border-left: 1px solid #dddddd;">
+            <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+                <h4>Column</h4>
+
+                <h6><i class="fa fa-play-circle" aria-hidden="true"></i> Add a content item</h6>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra vitae
+                    odio non viverra.</p>
+
+                <div class="btn-group pb-1">
+                    <a class="btn btn-sm btn-outline-info" href="#">Heading</a>
+                    <a class="btn btn-sm btn-outline-info" href="#">Rich text</a>
+                    <a class="btn btn-sm btn-outline-info" href="#">Plain text</a>
+                    <a class="btn btn-sm btn-outline-info" href="#">HTML</a>
+                </div>
+
+                <div class="btn-group pb-1">
+                    <a class="btn btn-sm btn-outline-info" href="#">Jumbotron</a>
+                    <a class="btn btn-sm btn-outline-info" href="#">Heading & date</a>
+                    <a class="btn btn-sm btn-outline-info" href="#">Blog post</a>
+                </div>
+
+                <div class="btn-group pb-3">
+                    <a class="btn btn-sm btn-outline-info" href="#">Form</a>
+                    <a class="btn btn-sm btn-outline-info" href="#">Image</a>
+                    <a class="btn btn-sm btn-outline-info" href="#">Widget</a>
+                </div>
+
+                <h6><i class="fa fa-play-circle" aria-hidden="true"></i> Select an existing column</h6>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra vitae
+                    odio non viverra.</p>
+
+                <div class="btn-group-vertical pb-3">
+                    <a class="btn btn-sm btn-outline-info" href="#">Content item 1</a>
+                    <a class="btn btn-sm btn-outline-info" href="#">Content item 2</a>
+                    <a class="btn btn-sm btn-outline-info" href="#">Content item ...</a>
+                </div>
+
+                <h6><i class="fa fa-play-circle" aria-hidden="true"></i> Edit the column</h6>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra vitae
+                    odio non viverra.</p>
+
+            </div>
+            <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                <h4>Styling</h4>
 
                 <form>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
+                        <label for="exampleInputEmail1">Column background colour</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        <small id="emailHelp" class="form-text text-muted">Set the background colour for the column.</small>
                     </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                        <input type="checkbox" class="form-check-input">
-                            Check me out
-                        </label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-sm btn-outline-success">Save</button>
                 </form>
             </div>
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                <h2>Profile tab</h2>
+            <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+                <h4>Settings</h4>
 
-                <form>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address (2)</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password (2)</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                        <input type="checkbox" class="form-check-input">
-                            Check me out
-                        </label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+                <p class="lead">Tool form here...</p>
+
+                <p>Tool help full text</p>
+            </div>
+            <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
+                <h4>Responsive</h4>
+
+                <p class="lead">Tool form here...</p>
+
+                <p>Tool help full text</p>
+            </div>
+            <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+                <h4>Help</h4>
+
+                <p class="lead">Tool help intro...</p>
+
+                <p>Tool help full text</p>
+
+                <p><a class="btn btn-outline-primary btn-sm" href="#">Link to online docs</a></p>
             </div>
         </div>
     </div>
