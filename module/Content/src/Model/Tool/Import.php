@@ -11,5 +11,20 @@ namespace Content\Model\Tool;
 
 class Import
 {
-
+    /**
+     * Tools array for toolbar
+     *
+     * @return array
+     */
+    public function tools() : array
+    {
+        return [
+            [
+                [ 'uri' => '#', 'name' => 'Form', 'trigger' => [ 'column' ] ],
+                [ 'uri' => '#', 'name' => 'Image', 'trigger' => [ 'column' ] ],
+                [ 'uri' => '#', 'name' => 'Gallery', 'trigger' => [ 'column' ] ],
+                [ 'uri' => '#', 'name' => 'Widget', 'trigger' => [ 'column' ] ]
+            ]
+        ];
+    }
 }

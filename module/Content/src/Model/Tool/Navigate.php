@@ -11,5 +11,22 @@ namespace Content\Model\Tool;
 
 class Navigate
 {
-
+    /**
+     * Tools array for toolbar
+     *
+     * @return array
+     */
+    public function tools() : array
+    {
+        return [
+            [
+                [ 'uri' => '#', 'name' => 'Parent', 'trigger' => [ 'row' ] ],
+                [ 'uri' => '#', 'name' => 'Row', 'trigger' => [ 'column' ] ],
+                [ 'uri' => '#', 'name' => 'Column [prev]', 'trigger' => [ 'column' ] ],
+                [ 'uri' => '#', 'name' => 'Column [next]', 'trigger' => [ 'column' ] ],
+                [ 'uri' => '#', 'name' => 'Content [prev]', 'trigger' => [ 'content' ] ],
+                [ 'uri' => '#', 'name' => 'Content [next]', 'trigger' => [ 'content' ] ],
+            ]
+        ];
+    }
 }
