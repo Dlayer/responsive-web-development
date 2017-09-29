@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 namespace Content\Model\Tool;
 
-class PageStructure
+class Page
 {
 
 }
