@@ -7,12 +7,12 @@
 
 declare(strict_types=1);
 
-namespace Content\Model\Tool\Content\Jumbotron;
+namespace Content\Model\Tool\Content\Jumbotron\Help;
 
-class Model
+class Tool
 {
     /**
-     * Model class for tool, setup of data, data management and possibly validation although that may be
-     * in its own class.
+     * All the code related to setting up the tool form/ux etc, possibly the validation as well,
+     * not sure yet
      */
 }

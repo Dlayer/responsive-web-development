@@ -2,4 +2,9 @@
 /**
  * Config data array for tool
  */
-$config = [];
+$config = [
+    'tabs' => [
+        'Main' => 'Jumbotron',
+        'Help' => 'Help'
+    ]
+];

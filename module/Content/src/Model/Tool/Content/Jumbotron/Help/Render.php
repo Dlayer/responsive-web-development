@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace Content\Model\Tool\Content\Jumbotron;
+namespace Content\Model\Tool\Content\Jumbotron\Help;
 
 class Render
 {

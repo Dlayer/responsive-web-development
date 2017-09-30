@@ -7,12 +7,12 @@
 
 declare(strict_types=1);
 
-namespace Content\Model\Tool\Content\Jumbotron;
+namespace Content\Model\Tool\Content\Jumbotron\Main;
 
-class Tool
+class Render
 {
     /**
-     * All the code related to setting up the tool form/ux etc, possible the validation as well,
-     * not sure yet
+     * Return the generated HTML for the content item, probably has two modes, admin and default,
+     * expect the majority will simply call a view helper
      */
 }
