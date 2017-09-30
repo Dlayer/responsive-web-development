@@ -5,6 +5,8 @@
  * @license https://github.com/Dlayer/responsive-web-development/blob/master/LICENSE
  */
 
+declare(strict_types=1);
+
 namespace Content\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
@@ -27,18 +29,6 @@ class ManagerController extends AbstractActionController
                 [ 'uri' => '/helpers', 'name' => 'View helpers']
             ]
         ];
-    }
-
-    /**
-     * Root for content manager
-     *
-     * @return \Zend\View\Model\ViewModel
-     */
-    public function indexAction() : ViewModel
-    {
-        $this->layout()->setVariables($this->layoutVariables())->setTemplate('layout/content-manager');
-
-        return new ViewModel();
     }
 
     /**
@@ -85,6 +75,18 @@ class ManagerController extends AbstractActionController
     public function toolAndItemSelectedAction() : ViewModel
     {
         $this->layout()->setVariables($this->layoutVariables())->setTemplate('layout/content-manager-tool-and-item-selected');
+
+        return new ViewModel();
+    }
+
+    /**
+     * Mocking up the tools
+     *
+     * @return \Zend\View\Model\ViewModel
+     */
+    public function mockToolsAction() : ViewModel
+    {
+        $this->layout()->setVariables($this->layoutVariables())->setTemplate('layout/content-manager-mock-tools');
 
         return new ViewModel();
     }

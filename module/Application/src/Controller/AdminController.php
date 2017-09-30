@@ -5,6 +5,8 @@
  * @license https://github.com/Dlayer/responsive-web-development/blob/master/LICENSE
  */
 
+declare(strict_types=1);
+
 namespace Application\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
