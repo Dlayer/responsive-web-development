@@ -1,4 +1,7 @@
 <?php
+
+namespace Content\Model\Tool\Content\Jumbotron;
+
 /**
  * Config data array for tool
  */
