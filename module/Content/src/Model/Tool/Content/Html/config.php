@@ -1,13 +1,13 @@
 <?php
 
-namespace Content\Model\Tool\Content\Jumbotron;
+namespace Content\Model\Tool\Content\Html;
 
 /**
  * Config data array for tool
  */
 $config = [
     'tabs' => [
-        'Main' => 'Jumbotron',
+        'Main' => 'HTML',
         'Help' => 'Help'
     ]
 ];

@@ -1,13 +1,13 @@
 <?php
 
-namespace Content\Model\Tool\Content\Jumbotron;
+namespace Content\Model\Tool\Content\HeadingAndDate;
 
 /**
  * Config data array for tool
  */
 $config = [
     'tabs' => [
-        'Main' => 'Jumbotron',
+        'Main' => 'Heading & date',
         'Help' => 'Help'
     ]
 ];
