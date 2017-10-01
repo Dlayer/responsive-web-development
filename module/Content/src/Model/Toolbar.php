@@ -22,8 +22,18 @@ class Toolbar
     {
         return [
             [
-                [ 'uri' => '#', 'name' => 'Row', 'trigger' => [ 'page', 'column' ] ],
-                [ 'uri' => '#', 'name' => 'Column', 'trigger' => [ 'row' ] ],
+                [
+                    'uri' => '#',
+                    'name' => 'Row',
+                    'trigger' => [ 'page', 'column' ],
+                    'namespace' => 'Content\Model\Tool\Page\Row'
+                ],
+                [
+                    'uri' => '#',
+                    'name' => 'Column',
+                    'trigger' => [ 'row' ],
+                    'namespace' => 'Content\Model\Tool\Page\Column'
+                ],
             ]
         ];
     }
@@ -35,16 +45,48 @@ class Toolbar
      */
     public function navigate() : array
     {
-        return [
+        /*return [
             [
-                [ 'uri' => '#', 'name' => 'Parent', 'trigger' => [ 'row' ] ],
-                [ 'uri' => '#', 'name' => 'Row', 'trigger' => [ 'column' ] ],
-                [ 'uri' => '#', 'name' => 'Column [prev]', 'trigger' => [ 'column' ] ],
-                [ 'uri' => '#', 'name' => 'Column [next]', 'trigger' => [ 'column' ] ],
-                [ 'uri' => '#', 'name' => 'Content [prev]', 'trigger' => [ 'content' ] ],
-                [ 'uri' => '#', 'name' => 'Content [next]', 'trigger' => [ 'content' ] ],
+                [
+                    'uri' => '#',
+                    'name' => 'Parent',
+                    'trigger' => [ 'row' ],
+                    'namespace' => 'Content\Model\Tool\Navigate\Row'
+                ],
+                [
+                    'uri' => '#',
+                    'name' => 'Row',
+                    'trigger' => [ 'column' ],
+                    'namespace' => 'Content\Model\Tool\Navigate\Column'
+                ],
+                [
+                    'uri' => '#',
+                    'name' => 'Column [prev]',
+                    'trigger' => [ 'column' ],
+                    'namespace' => 'Content\Model\Tool\Navigate\ColumnPrev'
+                ],
+                [
+                    'uri' => '#',
+                    'name' => 'Column [next]',
+                    'trigger' => [ 'column' ],
+                    'namespace' => 'Content\Model\Tool\Navigate\ColumnNext'
+                ],
+                [
+                    'uri' => '#',
+                    'name' => 'Content [prev]',
+                    'trigger' => [ 'content' ],
+                    'namespace' => 'Content\Model\Tool\Navigate\ContentPrev'
+                ],
+                [
+                    'uri' => '#',
+                    'name' => 'Content [next]',
+                    'trigger' => [ 'content' ],
+                    'namespace' => 'Content\Model\Tool\Navigate\ContentNext'
+                ]
             ]
-        ];
+        ];*/
+
+        return []; // deal with these tools later.
     }
 
     /**
@@ -109,15 +151,37 @@ class Toolbar
      *
      * @return array
      */
-    public function tools() : array
+    public function import() : array
     {
-        return [
+        /*return [
             [
-                [ 'uri' => '#', 'name' => 'Form', 'trigger' => [ 'column' ] ],
-                [ 'uri' => '#', 'name' => 'Image', 'trigger' => [ 'column' ] ],
-                [ 'uri' => '#', 'name' => 'Gallery', 'trigger' => [ 'column' ] ],
-                [ 'uri' => '#', 'name' => 'Widget', 'trigger' => [ 'column' ] ]
+                [
+                    'uri' => '#',
+                    'name' => 'Form',
+                    'trigger' => [ 'column' ],
+                    'namespace' => 'Content\Model\Tool\Import\Form'
+                ],
+                [
+                    'uri' => '#',
+                    'name' => 'Image',
+                    'trigger' => [ 'column' ],
+                    'namespace' => 'Content\Model\Tool\Import\Image'
+                ],
+                [
+                    'uri' => '#',
+                    'name' => 'Gallery',
+                    'trigger' => [ 'column' ],
+                    'namespace' => 'Content\Model\Tool\Import\Gallery'
+                ],
+                [
+                    'uri' => '#',
+                    'name' => 'Widget',
+                    'trigger' => [ 'column' ],
+                    'namespace' => 'Content\Model\Tool\Import\Widget'
+                ]
             ]
-        ];
+        ];*/
+
+        return []; // Deal with these tools later
     }
 }
