@@ -9,9 +9,9 @@ declare(strict_types=1);
 
 namespace Content\Controller;
 
+use Content\Model\Toolbar;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
-use Zend\View\View;
 
 class ManagerController extends AbstractActionController
 {
@@ -86,8 +86,32 @@ class ManagerController extends AbstractActionController
      */
     public function mockToolsAction() : ViewModel
     {
-        $this->layout()->setVariables($this->layoutVariables())->setTemplate('layout/content-manager-mock-tools');
+        $this->layout()->setVariables($this->mockLayoutVariables())->setTemplate('layout/content-manager-mock-tools');
 
         return new ViewModel();
+    }
+
+    /**
+     * Layout variables for the navbar
+     *
+     * @return array
+     */
+    private function mockLayoutVariables() : array
+    {
+        $toolbar = new Toolbar();
+
+        return [
+            'navbar' => [
+                [ 'uri' => '/', 'name' => 'Dlayer vNext'],
+                [ 'uri' => '/content', 'name' => 'Content Manager', 'active' => true ],
+                [ 'uri' => '/helpers', 'name' => 'View helpers']
+            ],
+            'toolbar' => [
+                'page' => $toolbar->page(),
+                'navigate' => $toolbar->navigate(),
+                'content' => $toolbar->content(),
+                'import' => $toolbar->import()
+            ]
+        ];
     }
 }
