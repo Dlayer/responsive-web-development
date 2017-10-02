@@ -26,13 +26,13 @@ class Toolbar
                     'uri' => '#',
                     'name' => 'Row',
                     'trigger' => [ 'page', 'column' ],
-                    'namespace' => 'Content\Model\Tool\Page\Row'
+                    'namespace' => 'Content\Tool\Page\Row'
                 ],
                 [
                     'uri' => '#',
                     'name' => 'Column',
                     'trigger' => [ 'row' ],
-                    'namespace' => 'Content\Model\Tool\Page\Column'
+                    'namespace' => 'Content\Tool\Page\Column'
                 ],
             ]
         ];
@@ -51,37 +51,37 @@ class Toolbar
                     'uri' => '#',
                     'name' => 'Parent',
                     'trigger' => [ 'row' ],
-                    'namespace' => 'Content\Model\Tool\Navigate\Row'
+                    'namespace' => 'Content\Tool\Navigate\Row'
                 ],
                 [
                     'uri' => '#',
                     'name' => 'Row',
                     'trigger' => [ 'column' ],
-                    'namespace' => 'Content\Model\Tool\Navigate\Column'
+                    'namespace' => 'Content\Tool\Navigate\Column'
                 ],
                 [
                     'uri' => '#',
                     'name' => 'Column [prev]',
                     'trigger' => [ 'column' ],
-                    'namespace' => 'Content\Model\Tool\Navigate\ColumnPrev'
+                    'namespace' => 'Content\Tool\Navigate\ColumnPrev'
                 ],
                 [
                     'uri' => '#',
                     'name' => 'Column [next]',
                     'trigger' => [ 'column' ],
-                    'namespace' => 'Content\Model\Tool\Navigate\ColumnNext'
+                    'namespace' => 'Content\Tool\Navigate\ColumnNext'
                 ],
                 [
                     'uri' => '#',
                     'name' => 'Content [prev]',
                     'trigger' => [ 'content' ],
-                    'namespace' => 'Content\Model\Tool\Navigate\ContentPrev'
+                    'namespace' => 'Content\Tool\Navigate\ContentPrev'
                 ],
                 [
                     'uri' => '#',
                     'name' => 'Content [next]',
                     'trigger' => [ 'content' ],
-                    'namespace' => 'Content\Model\Tool\Navigate\ContentNext'
+                    'namespace' => 'Content\Tool\Navigate\ContentNext'
                 ]
             ]
         ];*/
@@ -102,25 +102,25 @@ class Toolbar
                     'uri' => '#',
                     'name' => 'Heading',
                     'trigger' => [ 'column' ],
-                    'namespace' => 'Content\Model\Tool\Content\Heading'
+                    'namespace' => 'Content\Tool\Content\Heading'
                 ],
                 [
                     'uri' => '#',
                     'name' => 'Rich text',
                     'trigger' => [ 'column' ],
-                    'namespace' => 'Content\Model\Tool\Content\RichText'
+                    'namespace' => 'Content\Tool\Content\RichText'
                 ],
                 [
                     'uri' => '#',
                     'name' => 'Plain text',
                     'trigger' => [ 'column' ],
-                    'namespace' => 'Content\Model\Tool\Content\PlainText'
+                    'namespace' => 'Content\Tool\Content\PlainText'
                 ],
                 [
                     'uri' => '#',
                     'name' => 'HTML',
                     'trigger' => [ 'column' ],
-                    'namespace' => 'Content\Model\Tool\Content\Html'
+                    'namespace' => 'Content\Tool\Content\Html'
                 ]
             ],
             [
@@ -128,19 +128,19 @@ class Toolbar
                     'uri' => '#',
                     'name' => 'Jumbotron',
                     'trigger' => [ 'column' ],
-                    'namespace' => 'Content\Model\Tool\Content\Jumbotron'
+                    'namespace' => 'Content\Tool\Content\Jumbotron'
                 ],
                 [
                     'uri' => '#',
                     'name' => 'Heading & date',
                     'trigger' => [ 'column' ],
-                    'namespace' => 'Content\Model\Tool\Content\HeadingAndDate'
+                    'namespace' => 'Content\Tool\Content\HeadingAndDate'
                 ],
                 [
                     'uri' => '#',
                     'name' => 'Blog post',
                     'trigger' => [ 'column' ],
-                    'namespace' => 'Content\Model\Tool\Content\BlogPost'
+                    'namespace' => 'Content\Tool\Content\BlogPost'
                 ]
             ]
         ];
@@ -159,25 +159,25 @@ class Toolbar
                     'uri' => '#',
                     'name' => 'Form',
                     'trigger' => [ 'column' ],
-                    'namespace' => 'Content\Model\Tool\Import\Form'
+                    'namespace' => 'Content\Tool\Import\Form'
                 ],
                 [
                     'uri' => '#',
                     'name' => 'Image',
                     'trigger' => [ 'column' ],
-                    'namespace' => 'Content\Model\Tool\Import\Image'
+                    'namespace' => 'Content\Tool\Import\Image'
                 ],
                 [
                     'uri' => '#',
                     'name' => 'Gallery',
                     'trigger' => [ 'column' ],
-                    'namespace' => 'Content\Model\Tool\Import\Gallery'
+                    'namespace' => 'Content\Tool\Import\Gallery'
                 ],
                 [
                     'uri' => '#',
                     'name' => 'Widget',
                     'trigger' => [ 'column' ],
-                    'namespace' => 'Content\Model\Tool\Import\Widget'
+                    'namespace' => 'Content\Tool\Import\Widget'
                 ]
             ]
         ];*/
