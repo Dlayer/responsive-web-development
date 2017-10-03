@@ -46,10 +46,12 @@ return [
     ],
     'view_helpers' => [
         'factories' => [
-            View\Helper\TestHelper::class => InvokableFactory::class
+            View\Helper\TestHelper::class => InvokableFactory::class,
+            View\Helper\Toolbar::class => InvokableFactory::class,
         ],
         'aliases' => [
-            'testHelper' => View\Helper\TestHelper::class
+            'testHelper' => View\Helper\TestHelper::class,
+            'toolbar' => View\Helper\Toolbar::class
         ]
     ],
     'view_manager' => [
