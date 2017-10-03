@@ -15,6 +15,7 @@
     ],
     "homepage": "http://dlayer.com",
     "require": {
+        "dlayer/view-helpers": "dev-master",
         "deanblackborough/php-quill-renderer": "^2",
         "deanblackborough/zf3-view-helpers": "^0",
         "deanblackborough/zf3-view-helpers-code-completion": "^1",
