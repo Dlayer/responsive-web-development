@@ -14,7 +14,15 @@ use Zend\View\Helper\AbstractHelper;
  */
 class Toolbar extends AbstractHelper
 {
+    /**
+     * @var array Button groups by section
+     */
     private $button_groups;
+
+    /**
+     * @var array Classes to apply to each button group
+     */
+    private $button_group_classes;
 
     /**
      * Entry point for the view helper
@@ -29,6 +37,34 @@ class Toolbar extends AbstractHelper
     }
 
     /**
+     * Pass in the button groups array
+     *
+     * @param array $groups The button groups to display
+     *
+     * @return Toolbar
+     */
+    public function buttonGroups(array $groups) : Toolbar
+    {
+        $this->button_groups = $groups;
+
+        return $this;
+    }
+
+    /**
+     * Custom classes to attach to button groups
+     *
+     * @param array $classes
+     *
+     * @return Toolbar
+     */
+    public function buttonGroupClasses(array $classes) : Toolbar
+    {
+        $this->button_group_classes = $classes;
+
+        return $this;
+    }
+
+    /**
      * Reset all properties in case the view helper is called multiple times within a script
      *
      * @return void
@@ -36,6 +72,7 @@ class Toolbar extends AbstractHelper
     private function reset() : void
     {
         $this->button_groups = [];
+        $this->button_group_classes = [];
     }
 
     /**
@@ -57,18 +94,21 @@ class Toolbar extends AbstractHelper
                     <a class="btn btn-danger" href="#"><i class="fa fa-lg fa-ban" aria-hidden="true"></i> Cancel</a>
                 </div>';
 
-        foreach ($this->button_groups as $group) {
-            if (count($group) > 0) {
-                $html .= '<div class="btn-group btn-group-sm">';
-                foreach ($group as $button) {
-                    $html .= '<a class="btn btn-outline-info" href="' . $button['uri'] . '">' . $button['name'] . '</a>';
+        foreach ($this->button_groups as $section) {
+            foreach ($section as $group) {
+                if (count($group) > 0) {
+                    $html .= '<div class="btn-group ' . implode(' ', $this->button_group_classes) . '">';
+                    foreach ($group as $button) {
+                        $html .= '<a class="btn btn-outline-info" href="' . $button['uri'] . '">' . $button['name'] .
+                            '</a>';
+                    }
+                    $html .= '</div>';
                 }
-                $html .= '</div>';
             }
         }
 
         $html .= '
-            <div class="btn-group">
+            <div class="btn-group ml-auto">
                 <a class="btn btn-outline-info" href="#"><i class="fa fa-lg fa-expand" aria-hidden="true"></i></a>
             </div></div>';
         $html .= '</nav>';
