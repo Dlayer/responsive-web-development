@@ -47,42 +47,7 @@
         <div class="container-fluid">
             <?php echo $this->content; ?>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom mt-5" style="border-top: 1px solid #ddd;">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarBottom" aria-controls="navbarBottom" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarBottom">
-                <div class="btn-group btn-group-sm">
-                    <a class="btn btn-danger" href="#"><i class="fa fa-lg fa-ban" aria-hidden="true"></i> Cancel</a>
-                </div>
-                <div class="btn-group btn-group-sm ml-3">
-                    <a class="btn btn-outline-info" href="#">Column</a>
-                    <a class="btn btn-outline-info" href="#"><i class="fa fa-rotate-180 fa-play-circle" aria-hidden="true"></i> Content</a>
-                    <a class="btn btn-outline-info" href="#">Content <i class="fa fa-play-circle" aria-hidden="true"></i></a>
-                </div>
-                <div class="btn-group btn-group-sm ml-3">
-                    <a class="btn btn-outline-info" href="#">Heading</a>
-                    <a class="btn btn-outline-info" href="#">Rich text</a>
-                    <a class="btn btn-outline-info" href="#">Plain text</a>
-                    <a class="btn btn-outline-info" href="#">HTML</a>
-                </div>
-                <div class="btn-group btn-group-sm ml-3">
-                    <a class="btn btn-outline-info active" href="#">Jumbotron</a>
-                    <a class="btn btn-outline-info" href="#">Heading & date</a>
-                    <a class="btn btn-outline-info" href="#">Blog post</a>
-                </div>
-                <div class="btn-group btn-group-sm ml-3 mr-auto">
-                    <a class="btn btn-outline-info" href="#">Form</a>
-                    <a class="btn btn-outline-info" href="#">Image</a>
-                    <a class="btn btn-outline-info" href="#">Gallery</a>
-                    <a class="btn btn-outline-info" href="#">Widget</a>
-                </div>
-                <div class="btn-group">
-                    <a class="btn btn-outline-info" href="#"><i class="fa fa-lg fa-expand" aria-hidden="true"></i></a>
-                </div>
-            </div>
-        </nav>
+        <?php echo $this->toolbar()->buttonGroups($this->layout()->toolbar)->buttonGroupClasses([ 'btn-group-sm', 'ml-3' ]); ?>
         <?php echo $this->inlineScript() ?>
     </body>
 </html>

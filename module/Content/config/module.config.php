@@ -44,6 +44,16 @@ return [
             Controller\ManagerController::class => InvokableFactory::class
         ],
     ],
+    'view_helpers' => [
+        'factories' => [
+            View\Helper\TestHelper::class => InvokableFactory::class,
+            View\Helper\Toolbar::class => InvokableFactory::class,
+        ],
+        'aliases' => [
+            'testHelper' => View\Helper\TestHelper::class,
+            'toolbar' => View\Helper\Toolbar::class
+        ]
+    ],
     'view_manager' => [
         'display_not_found_reason' => true,
         'display_exceptions'       => true,
