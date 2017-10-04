@@ -9,6 +9,7 @@ declare(strict_types=1);
 
 namespace Content;
 
+use Dlayer\ViewHelper;
 use Zend\Router\Http\Literal;
 use Zend\Router\Http\Segment;
 use Zend\ServiceManager\Factory\InvokableFactory;
@@ -47,11 +48,11 @@ return [
     'view_helpers' => [
         'factories' => [
             View\Helper\TestHelper::class => InvokableFactory::class,
-            View\Helper\Toolbar::class => InvokableFactory::class,
+            ViewHelper\Toolbar::class => InvokableFactory::class
         ],
         'aliases' => [
             'testHelper' => View\Helper\TestHelper::class,
-            'toolbar' => View\Helper\Toolbar::class
+            'toolbar' => ViewHelper\Toolbar::class
         ]
     ],
     'view_manager' => [
