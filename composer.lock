@@ -188,15 +188,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dlayer/view-helpers.git",
-                "reference": "142e213e96e9b6cbff59eb465c69c8cfbf7bb327"
+                "reference": "ea580b00a9f9526d53dc90a5e9e6ba7799173c76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dlayer/view-helpers/zipball/142e213e96e9b6cbff59eb465c69c8cfbf7bb327",
-                "reference": "142e213e96e9b6cbff59eb465c69c8cfbf7bb327",
+                "url": "https://api.github.com/repos/Dlayer/view-helpers/zipball/ea580b00a9f9526d53dc90a5e9e6ba7799173c76",
+                "reference": "ea580b00a9f9526d53dc90a5e9e6ba7799173c76",
                 "shasum": ""
             },
             "require": {
+                "deanblackborough/zf3-view-helpers": "0.*",
+                "deanblackborough/zf3-view-helpers-code-completion": "^1",
                 "php": "^7.1"
             },
             "type": "library",
@@ -223,7 +225,7 @@
                 "zf2",
                 "zf3"
             ],
-            "time": "2017-10-03 13:11:25"
+            "time": "2017-10-04 13:07:56"
         },
         {
             "name": "doctrine/instantiator",
