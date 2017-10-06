@@ -111,7 +111,9 @@ class ManagerController extends AbstractActionController
                 'navigate' => $toolbar->navigate(),
                 'content' => $toolbar->content(),
                 'import' => $toolbar->import()
-            ]
+            ],
+            'toolbar_left' => $toolbar->left(),
+            'toolbar_right' => $toolbar->right()
         ];
     }
 }

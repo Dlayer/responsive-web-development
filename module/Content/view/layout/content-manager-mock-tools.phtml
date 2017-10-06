@@ -47,7 +47,13 @@
         <div class="container-fluid">
             <?php echo $this->content; ?>
         </div>
-        <?php echo $this->toolbar()->buttonGroups($this->layout()->toolbar)->buttonGroupClasses([ 'btn-group-sm', 'ml-3' ]); ?>
+        <?php echo $this->toolbar()
+            ->buttonGroups($this->layout()->toolbar)
+            ->buttonGroupsClasses([ 'btn-group-sm', 'ml-3' ])
+            ->buttonGroupLeft($this->layout()->toolbar_left)
+            ->buttonGroupRight($this->layout()->toolbar_right)
+            ->buttonGroupClassesLeft([ 'btn-group-sm' ])
+            ->buttonGroupClassesRight([ 'btn-group-sm', 'ml-auto' ]); ?>
         <?php echo $this->inlineScript() ?>
     </body>
 </html>
