@@ -10,6 +10,7 @@ declare(strict_types=1);
 namespace Content\Controller;
 
 use Content\Model\Toolbar;
+use Content\Ui\Status as UiStatus;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 
@@ -86,6 +87,8 @@ class ManagerController extends AbstractActionController
      */
     public function mockToolsAction() : ViewModel
     {
+        $ui_status = new UiStatus();
+
         $this->layout()->setVariables($this->mockLayoutVariables())->setTemplate('layout/content-manager-mock-tools');
 
         return new ViewModel();
@@ -111,7 +114,9 @@ class ManagerController extends AbstractActionController
                 'navigate' => $toolbar->navigate(),
                 'content' => $toolbar->content(),
                 'import' => $toolbar->import()
-            ]
+            ],
+            'toolbar_left' => $toolbar->left(),
+            'toolbar_right' => $toolbar->right()
         ];
     }
 }

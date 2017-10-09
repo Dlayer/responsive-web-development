@@ -14,6 +14,42 @@ namespace Content\Model;
 class Toolbar
 {
     /**
+     * Cancel button for the left of the toolbar
+     *
+     * @return array
+     */
+    public function left() : array
+    {
+        return [
+            [
+                'id' => 'cancel',
+                'name' => ' Cancel',
+                'trigger' => [],
+                'fa-glyphs' => [ 'fa-lg', 'fa-ban' ],
+                'btn-classes' => [ 'btn-danger' ]
+            ]
+        ];
+    }
+
+    /**
+     * Expand button for the right side of the toolbar
+     *
+     * @return array
+     */
+    public function right() : array
+    {
+        return [
+            [
+                'id' => 'expand',
+                'name' => ' Expand',
+                'trigger' => [],
+                'fa-glyphs' => [ 'fa-lg', 'fa-expand' ],
+                'btn-classes' => [ 'btn-outline-info' ]
+            ]
+        ];
+    }
+
+    /**
      * Page tools for the toolbar
      *
      * @return array
@@ -23,16 +59,16 @@ class Toolbar
         return [
             [
                 [
-                    'uri' => '#',
+                    'id' => 'row',
                     'name' => 'Row',
                     'trigger' => [ 'page', 'column' ],
-                    'namespace' => 'Content\Tool\Page\Row'
+                    'btn-classes' => [ 'btn-outline-info' ]
                 ],
                 [
-                    'uri' => '#',
+                    'id' => 'column#',
                     'name' => 'Column',
                     'trigger' => [ 'row' ],
-                    'namespace' => 'Content\Tool\Page\Column'
+                    'btn-classes' => [ 'btn-outline-info' ]
                 ],
             ]
         ];
@@ -99,48 +135,48 @@ class Toolbar
         return [
             [
                 [
-                    'uri' => '#',
+                    'id' => 'heading',
                     'name' => 'Heading',
                     'trigger' => [ 'column' ],
-                    'namespace' => 'Content\Tool\Content\Heading'
+                    'btn-classes' => [ 'btn-outline-info' ]
                 ],
                 [
-                    'uri' => '#',
+                    'id' => 'rich-text#',
                     'name' => 'Rich text',
                     'trigger' => [ 'column' ],
-                    'namespace' => 'Content\Tool\Content\RichText'
+                    'btn-classes' => [ 'btn-outline-info' ]
                 ],
                 [
-                    'uri' => '#',
+                    'id' => 'plain-text',
                     'name' => 'Plain text',
                     'trigger' => [ 'column' ],
-                    'namespace' => 'Content\Tool\Content\PlainText'
+                    'btn-classes' => [ 'btn-outline-info' ]
                 ],
                 [
-                    'uri' => '#',
+                    'id' => 'html',
                     'name' => 'HTML',
                     'trigger' => [ 'column' ],
-                    'namespace' => 'Content\Tool\Content\Html'
+                    'btn-classes' => [ 'btn-outline-info' ]
                 ]
             ],
             [
                 [
-                    'uri' => '#',
+                    'id' => 'jumbotron#',
                     'name' => 'Jumbotron',
                     'trigger' => [ 'column' ],
-                    'namespace' => 'Content\Tool\Content\Jumbotron'
+                    'btn-classes' => [ 'btn-outline-info' ]
                 ],
                 [
-                    'uri' => '#',
+                    'id' => 'heading-and-date',
                     'name' => 'Heading & date',
                     'trigger' => [ 'column' ],
-                    'namespace' => 'Content\Tool\Content\HeadingAndDate'
+                    'btn-classes' => [ 'btn-outline-info' ]
                 ],
                 [
-                    'uri' => '#',
+                    'id' => 'blog-post',
                     'name' => 'Blog post',
                     'trigger' => [ 'column' ],
-                    'namespace' => 'Content\Tool\Content\BlogPost'
+                    'btn-classes' => [ 'btn-outline-info' ]
                 ]
             ]
         ];
