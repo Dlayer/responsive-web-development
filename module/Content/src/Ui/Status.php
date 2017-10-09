@@ -11,9 +11,7 @@ declare(strict_types=1);
 
 namespace Content\Ui;
 
-use Zend\Mvc\MvcEvent;
 use Zend\Session\Container as SessionContainer;
-use Zend\Session\SessionManager;
 
 class Status
 {
@@ -55,5 +53,24 @@ class Status
     public function __construct()
     {
         $this->session = new SessionContainer('Content\Ui\Status');
+    }
+
+    public function setPageId($id)
+    {
+        $this->session->page_id = $id;
+    }
+
+    public function getPageId()
+    {
+        if (isset($this->session->page_id) === true) {
+            return (int) $this->session->page_id;
+        } else {
+            return null;
+        }
+    }
+
+    public function clearPageId()
+    {
+        unset($this->session->page_id);
     }
 }
