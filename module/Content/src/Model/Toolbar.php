@@ -22,10 +22,9 @@ class Toolbar
     {
         return [
             [
-                'uri' => '#',
+                'id' => 'cancel',
                 'name' => ' Cancel',
                 'trigger' => [],
-                'namespace' => 'Content\Tool\Ui\Cancel',
                 'fa-glyphs' => [ 'fa-lg', 'fa-ban' ],
                 'btn-classes' => [ 'btn-danger' ]
             ]
@@ -41,10 +40,9 @@ class Toolbar
     {
         return [
             [
-                'uri' => '#',
+                'id' => 'expand',
                 'name' => ' Expand',
                 'trigger' => [],
-                'namespace' => 'Content\Tool\Ui\Expand',
                 'fa-glyphs' => [ 'fa-lg', 'fa-expand' ],
                 'btn-classes' => [ 'btn-outline-info' ]
             ]
@@ -61,17 +59,15 @@ class Toolbar
         return [
             [
                 [
-                    'uri' => '#',
+                    'id' => 'row',
                     'name' => 'Row',
                     'trigger' => [ 'page', 'column' ],
-                    'namespace' => 'Content\Tool\Page\Row',
                     'btn-classes' => [ 'btn-outline-info' ]
                 ],
                 [
-                    'uri' => '#',
+                    'id' => 'column#',
                     'name' => 'Column',
                     'trigger' => [ 'row' ],
-                    'namespace' => 'Content\Tool\Page\Column',
                     'btn-classes' => [ 'btn-outline-info' ]
                 ],
             ]
@@ -139,54 +135,47 @@ class Toolbar
         return [
             [
                 [
-                    'uri' => '#',
+                    'id' => 'heading',
                     'name' => 'Heading',
                     'trigger' => [ 'column' ],
-                    'namespace' => 'Content\Tool\Content\Heading',
                     'btn-classes' => [ 'btn-outline-info' ]
                 ],
                 [
-                    'uri' => '#',
+                    'id' => 'rich-text#',
                     'name' => 'Rich text',
                     'trigger' => [ 'column' ],
-                    'namespace' => 'Content\Tool\Content\RichText',
                     'btn-classes' => [ 'btn-outline-info' ]
                 ],
                 [
-                    'uri' => '#',
+                    'id' => 'plain-text',
                     'name' => 'Plain text',
                     'trigger' => [ 'column' ],
-                    'namespace' => 'Content\Tool\Content\PlainText',
                     'btn-classes' => [ 'btn-outline-info' ]
                 ],
                 [
-                    'uri' => '#',
+                    'id' => 'html',
                     'name' => 'HTML',
                     'trigger' => [ 'column' ],
-                    'namespace' => 'Content\Tool\Content\Html',
                     'btn-classes' => [ 'btn-outline-info' ]
                 ]
             ],
             [
                 [
-                    'uri' => '#',
+                    'id' => 'jumbotron#',
                     'name' => 'Jumbotron',
                     'trigger' => [ 'column' ],
-                    'namespace' => 'Content\Tool\Content\Jumbotron',
                     'btn-classes' => [ 'btn-outline-info' ]
                 ],
                 [
-                    'uri' => '#',
+                    'id' => 'heading-and-date',
                     'name' => 'Heading & date',
                     'trigger' => [ 'column' ],
-                    'namespace' => 'Content\Tool\Content\HeadingAndDate',
                     'btn-classes' => [ 'btn-outline-info' ]
                 ],
                 [
-                    'uri' => '#',
+                    'id' => 'blog-post',
                     'name' => 'Blog post',
                     'trigger' => [ 'column' ],
-                    'namespace' => 'Content\Tool\Content\BlogPost',
                     'btn-classes' => [ 'btn-outline-info' ]
                 ]
             ]
