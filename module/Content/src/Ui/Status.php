@@ -11,6 +11,7 @@ declare(strict_types=1);
 
 namespace Content\Ui;
 
+use Content\Tool\Config;
 use Zend\Session\Container as SessionContainer;
 
 class Status
@@ -208,7 +209,14 @@ class Status
      */
     public function setTool(string $name, string $tab) : void
     {
-        $this->session->tool = $name;
-        $this->session->tool_tab = $tab;
+        if (array_key_exists($name, Config::get()['tools']) === true) {
+
+            /**
+             * Need to check to see if tab is defined in the tool config class and then
+             * set the tool and tool tab ids in the session
+             */
+            //$this->session->tool = $name;
+            //$this->session->tool_tab = $tab;
+        }
     }
 }
