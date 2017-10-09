@@ -25,7 +25,7 @@ class Toolbar
                 'uri' => '#',
                 'name' => ' Cancel',
                 'trigger' => [],
-                'namespace' => null,
+                'namespace' => 'Content\Tool\Ui\Cancel',
                 'fa-glyphs' => [ 'fa-lg', 'fa-ban' ],
                 'btn-classes' => [ 'btn-danger' ]
             ]
@@ -44,7 +44,7 @@ class Toolbar
                 'uri' => '#',
                 'name' => ' Expand',
                 'trigger' => [],
-                'namespace' => null,
+                'namespace' => 'Content\Tool\Ui\Expand',
                 'fa-glyphs' => [ 'fa-lg', 'fa-expand' ],
                 'btn-classes' => [ 'btn-outline-info' ]
             ]
