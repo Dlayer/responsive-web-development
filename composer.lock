@@ -88,16 +88,16 @@
         },
         {
             "name": "deanblackborough/zf3-view-helpers",
-            "version": "v0.62.1",
+            "version": "v0.63.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/deanblackborough/zf3-view-helpers.git",
-                "reference": "966d02e8364f0ec8150d205162cd3cd9601bb114"
+                "reference": "30f80d18258f1be0b7e106c30cc30b700bbcfc49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/deanblackborough/zf3-view-helpers/zipball/966d02e8364f0ec8150d205162cd3cd9601bb114",
-                "reference": "966d02e8364f0ec8150d205162cd3cd9601bb114",
+                "url": "https://api.github.com/repos/deanblackborough/zf3-view-helpers/zipball/30f80d18258f1be0b7e106c30cc30b700bbcfc49",
+                "reference": "30f80d18258f1be0b7e106c30cc30b700bbcfc49",
                 "shasum": ""
             },
             "require": {
@@ -132,7 +132,7 @@
                 "zend",
                 "zf3"
             ],
-            "time": "2017-09-22 12:20:33"
+            "time": "2017-10-09 11:29:15"
         },
         {
             "name": "deanblackborough/zf3-view-helpers-code-completion",
@@ -189,12 +189,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dlayer/view-helpers.git",
-                "reference": "ced770f01296e5b1b2f95aa7c04e7e1d65ca8534"
+                "reference": "64b9cc32e2dd9610a3abd5320cb213a0c229f965"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dlayer/view-helpers/zipball/ced770f01296e5b1b2f95aa7c04e7e1d65ca8534",
-                "reference": "ced770f01296e5b1b2f95aa7c04e7e1d65ca8534",
+                "url": "https://api.github.com/repos/Dlayer/view-helpers/zipball/64b9cc32e2dd9610a3abd5320cb213a0c229f965",
+                "reference": "64b9cc32e2dd9610a3abd5320cb213a0c229f965",
                 "shasum": ""
             },
             "require": {
@@ -226,7 +226,7 @@
                 "zf2",
                 "zf3"
             ],
-            "time": "2017-10-06 14:00:09"
+            "time": "2017-10-10 11:25:33"
         },
         {
             "name": "doctrine/instantiator",
@@ -987,16 +987,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "6.4.0",
+            "version": "6.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "a1bcaca096998de32c29535fdd2dea0c475e8f61"
+                "reference": "b770d8ba7e60295ee91d69d5a5e01ae833cac220"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/a1bcaca096998de32c29535fdd2dea0c475e8f61",
-                "reference": "a1bcaca096998de32c29535fdd2dea0c475e8f61",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/b770d8ba7e60295ee91d69d5a5e01ae833cac220",
+                "reference": "b770d8ba7e60295ee91d69d5a5e01ae833cac220",
                 "shasum": ""
             },
             "require": {
@@ -1067,7 +1067,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2017-10-06 03:14:57"
+            "time": "2017-10-07 17:53:53"
         },
         {
             "name": "phpunit/phpunit-mock-objects",

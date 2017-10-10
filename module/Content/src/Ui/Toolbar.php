@@ -1,4 +1,9 @@
 <?php
+
+declare(strict_types=1);
+
+namespace Content\Ui;
+
 /**
  * Tools for the toolbar
  *
@@ -6,11 +11,6 @@
  * @copyright Copyright (c) 2017 G3D Development Limited
  * @license https://github.com/Dlayer/responsive-web-development/blob/master/LICENSE
  */
-
-declare(strict_types=1);
-
-namespace Content\Model;
-
 class Toolbar
 {
     /**
@@ -161,7 +161,7 @@ class Toolbar
             ],
             [
                 [
-                    'id' => 'jumbotron#',
+                    'id' => 'jumbotron',
                     'name' => 'Jumbotron',
                     'trigger' => [ 'column' ],
                     'btn-classes' => [ 'btn-outline-info' ]

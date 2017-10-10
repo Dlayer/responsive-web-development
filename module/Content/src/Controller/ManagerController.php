@@ -9,8 +9,8 @@ declare(strict_types=1);
 
 namespace Content\Controller;
 
-use Content\Model\Toolbar;
-use Content\Ui\Status as UiStatus;
+use Content\Ui\State as UiState;
+use Content\Ui\Toolbar as UiToolbar;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 
@@ -87,36 +87,74 @@ class ManagerController extends AbstractActionController
      */
     public function mockToolsAction() : ViewModel
     {
-        $ui_status = new UiStatus();
-
-        $this->layout()->setVariables($this->mockLayoutVariables())->setTemplate('layout/content-manager-mock-tools');
+        $this->ui();
 
         return new ViewModel();
     }
 
     /**
-     * Layout variables for the navbar
+     * Data and state for the content manager toolbar
+     *
+     * @param string|null $id Id of the currently selected tool
      *
      * @return array
      */
-    private function mockLayoutVariables() : array
+    private function toolbar(?string $id) : array
     {
-        $toolbar = new Toolbar();
+        $toolbar = new UiToolbar();
 
         return [
-            'navbar' => [
-                [ 'uri' => '/', 'name' => 'Dlayer vNext'],
-                [ 'uri' => '/content', 'name' => 'Content Manager', 'active' => true ],
-                [ 'uri' => '/helpers', 'name' => 'View helpers']
-            ],
-            'toolbar' => [
+            'middle' => [
                 'page' => $toolbar->page(),
                 'navigate' => $toolbar->navigate(),
                 'content' => $toolbar->content(),
                 'import' => $toolbar->import()
             ],
-            'toolbar_left' => $toolbar->left(),
-            'toolbar_right' => $toolbar->right()
+            'left' => $toolbar->left(),
+            'right' => $toolbar->right(),
+            'active' => $id
         ];
+    }
+
+    /**
+     * Data and state of the currently selected tool
+     *
+     * @return array
+     */
+    private function tool() : array
+    {
+        return [];
+    }
+
+    /**
+     * Data array for the navbar
+     *
+     * @return array
+     */
+    private function navbar() : array
+    {
+        return  [
+            [ 'uri' => '/', 'name' => 'Dlayer vNext'],
+            [ 'uri' => '/content', 'name' => 'Content Manager', 'active' => true ],
+            [ 'uri' => '/helpers', 'name' => 'View helpers']
+        ];
+    }
+
+    /**
+     * Collect all the data for the content manager ui and send it to the layout
+     *
+     * @return void
+     */
+    private function ui() : void
+    {
+        $state = new UiState();
+
+        $ui = [
+            'navbar' => $this->navbar(),
+            'tool' => $this->tool(),
+            'toolbar' => $this->toolbar($state->getTool())
+        ];
+
+        $this->layout()->setVariables($ui)->setTemplate('layout/content-manager-mock-tools');
     }
 }

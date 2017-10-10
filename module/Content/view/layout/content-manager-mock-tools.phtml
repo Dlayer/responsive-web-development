@@ -45,15 +45,74 @@
             </div>
         </nav>
         <div class="container-fluid">
-            <?php echo $this->content; ?>
+            <div class="row content-manager mb-5">
+                <div class="col-xl-9 col-lg-9 col-md-12">
+                    <?php echo $this->content; ?>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-12 tool-form">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" style="padding: 0.3rem 0.8rem;" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-expanded="true"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" style="padding: 0.3rem 0.8rem;" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2"><i class="fa fa-tint" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" style="padding: 0.3rem 0.8rem;" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3"><i class="fa fa-font" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" style="padding: 0.3rem 0.8rem;" id="tab4-tab" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" style="padding: 0.3rem 0.8rem;" id="tab5-tab" data-toggle="tab" href="#tab5" role="tab" aria-controls="tab5"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                    <div class="tab-content p-3" id="myTabContent" style="border-left: 1px solid #dddddd;">
+                        <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+                            <h4>Jumbotron</h4>
+
+                            <p class="lead">Tool form here...</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                            <h4>Styling</h4>
+
+                            <p class="lead">Tool form here...</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+                            <h4>Typography</h4>
+
+                            <p class="lead">Tool form here...</p>
+
+                            <p>Tool help full text</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
+                            <h4>Delete</h4>
+
+                            <p class="lead">Tool form here...</p>
+
+                            <p>Tool help full text</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab5" role="tabpanel" aria-labelledby="tab5-tab">
+                            <h4>Typography</h4>
+
+                            <p class="lead">Tool help intro...</p>
+
+                            <p>Tool help full text</p>
+
+                            <p><a class="btn btn-outline-primary btn-sm" href="#">Link to online docs</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <?php echo $this->toolbar()
-            ->buttonGroups($this->layout()->toolbar)
+            ->buttonGroups($this->layout()->toolbar['middle'])
             ->buttonGroupsClasses([ 'btn-group-sm', 'ml-3' ])
-            ->buttonGroupLeft($this->layout()->toolbar_left)
-            ->buttonGroupRight($this->layout()->toolbar_right)
+            ->buttonGroupLeft($this->layout()->toolbar['left'])
+            ->buttonGroupRight($this->layout()->toolbar['right'])
             ->buttonGroupClassesLeft([ 'btn-group-sm' ])
-            ->buttonGroupClassesRight([ 'btn-group-sm', 'ml-auto' ]); ?>
+            ->buttonGroupClassesRight([ 'btn-group-sm', 'ml-auto' ])
+            ->active($this->layout()->toolbar['active']); ?>
         <?php echo $this->inlineScript() ?>
     </body>
 </html>
