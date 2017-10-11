@@ -7,19 +7,17 @@
         <p>Go back to the helpers <a href="/helpers">root</a>.</p>
 
         <pre>
-            $this->bootstrap4ProgressBarMultiple([25, 25])->
-            color(['danger', 'success'])->
-            height(10)->
-            animate()->
-            striped();
+            $this->bootstrap4ProgressBarMultiple([25, 25], ['danger', 'success'])
+            ->setHeight(10)
+            ->animate()
+            ->striped();
         </pre>
 
         <?php
-        echo $this->bootstrap4ProgressBarMultiple([25, 25])->
-            color(['danger', 'success'])->
-            height(10)->
-            animate()->
-            striped();
+        echo $this->bootstrap4ProgressBarMultiple([25, 25], ['danger', 'success'])
+            ->setHeight(10)
+            ->animate()
+            ->striped();
         ?>
     </div>
 </div>

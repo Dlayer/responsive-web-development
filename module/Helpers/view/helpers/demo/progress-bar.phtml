@@ -7,19 +7,19 @@
         <p>Go back to the helpers <a href="/helpers">root</a>.</p>
 
         <pre>
-            $this->bootstrap4ProgressBar(25)->
-            color('danger')->
-            height(10)->
-            animate()->
-            striped();
+            $this->bootstrap4ProgressBar(25)
+            ->setBgStyle('danger')
+            ->setHeight(10)
+            ->animate()
+            ->striped();
         </pre>
 
         <?php
-        echo $this->bootstrap4ProgressBar(25)->
-            color('danger')->
-            height(10)->
-            animate()->
-            striped();
+        echo $this->bootstrap4ProgressBar(25)
+            ->setBgStyle('danger')
+            ->setHeight(10)
+            ->animate()
+            ->striped();
         ?>
     </div>
 </div>
