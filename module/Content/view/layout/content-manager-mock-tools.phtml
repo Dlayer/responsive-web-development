@@ -105,14 +105,14 @@
                 </div>
             </div>
         </div>
-        <?php echo $this->toolbar()
-            ->buttonGroups($this->layout()->toolbar['middle'])
-            ->buttonGroupsClasses([ 'btn-group-sm', 'ml-3' ])
-            ->buttonGroupLeft($this->layout()->toolbar['left'])
-            ->buttonGroupRight($this->layout()->toolbar['right'])
-            ->buttonGroupClassesLeft([ 'btn-group-sm' ])
-            ->buttonGroupClassesRight([ 'btn-group-sm', 'ml-auto' ])
-            ->active($this->layout()->toolbar['active']); ?>
+        <?php echo $this->toolbar('dlayer_toolbar')
+            ->addTools($this->layout()->toolbar['middle'])
+            ->setClassForToolGroups([ 'btn-group-sm', 'ml-3' ])
+            ->addToolsToLeft($this->layout()->toolbar['left'])
+            ->addToolsToRight($this->layout()->toolbar['right'])
+            ->setClassesForLeftToolGroup([ 'btn-group-sm' ])
+            ->setClassesForRightToolGroup([ 'btn-group-sm', 'ml-auto' ])
+            ->setActiveTool($this->layout()->toolbar['active']); ?>
         <?php echo $this->inlineScript() ?>
     </body>
 </html>
