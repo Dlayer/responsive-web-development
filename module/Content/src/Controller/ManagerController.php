@@ -95,11 +95,11 @@ class ManagerController extends AbstractActionController
     /**
      * Data and state for the content manager toolbar
      *
-     * @param string|null $id Id of the currently selected tool
+     * @param array|null $tool Tool details or null if no tool selected
      *
      * @return array
      */
-    private function toolbar(?string $id) : array
+    private function toolbar(?array $tool) : array
     {
         $toolbar = new UiToolbar();
 
@@ -107,12 +107,13 @@ class ManagerController extends AbstractActionController
             'middle' => [
                 'page' => $toolbar->page(),
                 'navigate' => $toolbar->navigate(),
-                'content' => $toolbar->content(),
+                'simple' => $toolbar->simple(),
+                'complex' => $toolbar->complex(),
                 'import' => $toolbar->import()
             ],
             'left' => $toolbar->left(),
             'right' => $toolbar->right(),
-            'active' => $id
+            'active' => ($tool !== null) ? $tool['tool'] : null
         ];
     }
 

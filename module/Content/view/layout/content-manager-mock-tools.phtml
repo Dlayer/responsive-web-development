@@ -107,11 +107,11 @@
         </div>
         <?php echo $this->toolbar('dlayer_toolbar')
             ->addTools($this->layout()->toolbar['middle'])
-            ->setClassForToolGroups([ 'btn-group-sm', 'ml-3' ])
+            ->setClassForToolGroups([ 'btn-group', 'btn-group-sm', 'ml-3' ])
             ->addToolsToLeft($this->layout()->toolbar['left'])
             ->addToolsToRight($this->layout()->toolbar['right'])
-            ->setClassesForLeftToolGroup([ 'btn-group-sm' ])
-            ->setClassesForRightToolGroup([ 'btn-group-sm', 'ml-auto' ])
+            ->setClassesForLeftToolGroup([ 'btn-group', 'btn-group-sm' ])
+            ->setClassesForRightToolGroup([ 'btn-group', 'btn-group-sm', 'ml-auto' ])
             ->setActiveTool($this->layout()->toolbar['active']); ?>
         <?php echo $this->inlineScript() ?>
     </body>

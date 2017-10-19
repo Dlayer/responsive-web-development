@@ -58,19 +58,17 @@ class Toolbar
     {
         return [
             [
-                [
-                    'id' => 'row',
-                    'name' => 'Row',
-                    'trigger' => [ 'page', 'column' ],
-                    'btn-classes' => [ 'btn-outline-info' ]
-                ],
-                [
-                    'id' => 'column#',
-                    'name' => 'Column',
-                    'trigger' => [ 'row' ],
-                    'btn-classes' => [ 'btn-outline-info' ]
-                ],
-            ]
+                'id' => 'row',
+                'name' => 'Row',
+                'trigger' => [ 'page', 'column' ],
+                'btn-classes' => [ 'btn-outline-info' ]
+            ],
+            [
+                'id' => 'column#',
+                'name' => 'Column',
+                'trigger' => [ 'row' ],
+                'btn-classes' => [ 'btn-outline-info' ]
+            ],
         ];
     }
 
@@ -82,7 +80,6 @@ class Toolbar
     public function navigate() : array
     {
         /*return [
-            [
                 [
                     'uri' => '#',
                     'name' => 'Parent',
@@ -119,65 +116,71 @@ class Toolbar
                     'trigger' => [ 'content' ],
                     'namespace' => 'Content\Tool\Navigate\ContentNext'
                 ]
-            ]
         ];*/
 
         return []; // deal with these tools later.
     }
 
     /**
-     * Content tools for the toolbar
+     * Simple content tools for the toolbar
      *
      * @return array
      */
-    public function content() : array
+    public function simple() : array
     {
         return [
             [
-                [
-                    'id' => 'heading',
-                    'name' => 'Heading',
-                    'trigger' => [ 'column' ],
-                    'btn-classes' => [ 'btn-outline-info' ]
-                ],
-                [
-                    'id' => 'rich-text#',
-                    'name' => 'Rich text',
-                    'trigger' => [ 'column' ],
-                    'btn-classes' => [ 'btn-outline-info' ]
-                ],
-                [
-                    'id' => 'plain-text',
-                    'name' => 'Plain text',
-                    'trigger' => [ 'column' ],
-                    'btn-classes' => [ 'btn-outline-info' ]
-                ],
-                [
-                    'id' => 'html',
-                    'name' => 'HTML',
-                    'trigger' => [ 'column' ],
-                    'btn-classes' => [ 'btn-outline-info' ]
-                ]
+                'id' => 'heading',
+                'name' => 'Heading',
+                'trigger' => [ 'column' ],
+                'btn-classes' => [ 'btn-outline-info' ]
             ],
             [
-                [
-                    'id' => 'jumbotron',
-                    'name' => 'Jumbotron',
-                    'trigger' => [ 'column' ],
-                    'btn-classes' => [ 'btn-outline-info' ]
-                ],
-                [
-                    'id' => 'heading-and-date',
-                    'name' => 'Heading & date',
-                    'trigger' => [ 'column' ],
-                    'btn-classes' => [ 'btn-outline-info' ]
-                ],
-                [
-                    'id' => 'blog-post',
-                    'name' => 'Blog post',
-                    'trigger' => [ 'column' ],
-                    'btn-classes' => [ 'btn-outline-info' ]
-                ]
+                'id' => 'rich-text#',
+                'name' => 'Rich text',
+                'trigger' => [ 'column' ],
+                'btn-classes' => [ 'btn-outline-info' ]
+            ],
+            [
+                'id' => 'plain-text',
+                'name' => 'Plain text',
+                'trigger' => [ 'column' ],
+                'btn-classes' => [ 'btn-outline-info' ]
+            ],
+            [
+                'id' => 'html',
+                'name' => 'HTML',
+                'trigger' => [ 'column' ],
+                'btn-classes' => [ 'btn-outline-info' ]
+            ]
+        ];
+    }
+
+    /**
+     * Complex content tools for the toolbar
+     *
+     * @return array
+     */
+    public function complex() : array
+    {
+        return [
+            [
+                'id' => 'jumbotron',
+                'name' => 'Jumbotron',
+                'trigger' => [ 'column' ],
+                'btn-classes' => [ 'btn-outline-info' ]
+            ],
+            [
+                'id' => 'heading-and-date',
+                'name' => 'Heading & date',
+                'trigger' => [ 'column' ],
+                'btn-classes' => [ 'btn-outline-info' ]
+            ],
+            [
+                'id' => 'blog-post',
+                'name' => 'Blog post',
+                'trigger' => [ 'column' ],
+                'btn-classes' => [ 'btn-outline-info' ]
             ]
         ];
     }
