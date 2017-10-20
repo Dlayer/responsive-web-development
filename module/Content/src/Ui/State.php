@@ -14,7 +14,7 @@ namespace Content\Ui;
 use Content\Tool\Config;
 use Zend\Session\Container as SessionContainer;
 
-class Status
+class State
 {
     /**
      * @var \Zend\Session\Container Session container
@@ -22,11 +22,11 @@ class Status
     private $session;
 
     /**
-     * Status constructor.
+     * State constructor.
      */
     public function __construct()
     {
-        $this->session = new SessionContainer('Content\Ui\Status');
+        $this->session = new SessionContainer('Content\Ui\State');
     }
 
     /**
@@ -191,6 +191,8 @@ class Status
 
     /**
      * Set the id of the selected row
+     *
+     * @param integer $id
      *
      * @return void
      */

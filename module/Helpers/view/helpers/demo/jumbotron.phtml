@@ -9,15 +9,17 @@
         <pre>
             $this->bootstrap4Jumbotron(
                 'Heading',
-                '&lt;p class="lead"&gt;This is an example of a jumbotron&lt;/p&gt;')->
-            headingDisplayLevel(1);
+                '<p class="lead">This is an example of a jumbotron</p>')
+            ->setHeadingDisplayLevel(1)
+            ->setBgStyle('light');
         </pre>
 
         <?php
         echo $this->bootstrap4Jumbotron(
                 'Heading',
-                '<p class="lead">This is an example of a jumbotron</p>')->
-            headingDisplayLevel(1);
+                '<p class="lead">This is an example of a jumbotron</p>')
+            ->setHeadingDisplayLevel(1)
+            ->setBgStyle('light');
         ?>
     </div>
 </div>
