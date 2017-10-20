@@ -44,8 +44,8 @@
                 </span>
             </div>
         </nav>
-        <div class="container-fluid">
-            <div class="row content-manager mb-5">
+        <div class="container-fluid mb-3">
+            <div class="row content-manager">
                 <div class="col-xl-9 col-lg-9 col-md-12">
                     <?php echo $this->content; ?>
                 </div>
@@ -112,7 +112,8 @@
             ->addToolsToRight($this->layout()->toolbar['right'])
             ->setClassesForLeftToolGroup([ 'btn-group', 'btn-group-sm' ])
             ->setClassesForRightToolGroup([ 'btn-group', 'btn-group-sm', 'ml-auto' ])
-            ->setActiveTool($this->layout()->toolbar['active']); ?>
+            ->setActiveTool($this->layout()->toolbar['active'])
+            ->fixedBottom(); ?>
         <?php echo $this->inlineScript() ?>
     </body>
 </html>

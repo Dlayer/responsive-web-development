@@ -17,75 +17,11 @@ use Zend\View\Model\ViewModel;
 class ManagerController extends AbstractActionController
 {
     /**
-     * Layout variables for the navbar
-     *
-     * @return array
-     */
-    private function layoutVariables() : array
-    {
-        return [
-            'navbar' => [
-                [ 'uri' => '/', 'name' => 'Dlayer vNext'],
-                [ 'uri' => '/content', 'name' => 'Content Manager', 'active' => true ],
-                [ 'uri' => '/helpers', 'name' => 'View helpers']
-            ]
-        ];
-    }
-
-    /**
-     * Row selected
+     * Content manager
      *
      * @return \Zend\View\Model\ViewModel
      */
-    public function rowSelectedAction() : ViewModel
-    {
-        $this->layout()->setVariables($this->layoutVariables())->setTemplate('layout/content-manager-row-selected');
-
-        return new ViewModel();
-    }
-
-    /**
-     * Column selected
-     *
-     * @return \Zend\View\Model\ViewModel
-     */
-    public function columnSelectedAction() : ViewModel
-    {
-        $this->layout()->setVariables($this->layoutVariables())->setTemplate('layout/content-manager-column-selected');
-
-        return new ViewModel();
-    }
-
-    /**
-     * Sample HTML when a tool is selected, add mode
-     *
-     * @return \Zend\View\Model\ViewModel
-     */
-    public function toolSelectedAction() : ViewModel
-    {
-        $this->layout()->setVariables($this->layoutVariables())->setTemplate('layout/content-manager-tool-selected');
-
-        return new ViewModel();
-    }
-
-    /**
-     * Sample HTML when a tool is selected and item in edit mode
-     *
-     * @return \Zend\View\Model\ViewModel
-     */
-    public function toolAndItemSelectedAction() : ViewModel
-    {
-        $this->layout()->setVariables($this->layoutVariables())->setTemplate('layout/content-manager-tool-and-item-selected');
-
-        return new ViewModel();
-    }
-
-    /**
-     * Mocking up the tools
-     *
-     * @return \Zend\View\Model\ViewModel
-     */
-    public function mockToolsAction() : ViewModel
+    public function indexAction() : ViewModel
     {
         $this->ui();
 
@@ -156,6 +92,6 @@ class ManagerController extends AbstractActionController
             'toolbar' => $this->toolbar($state->getTool())
         ];
 
-        $this->layout()->setVariables($ui)->setTemplate('layout/content-manager-mock-tools');
+        $this->layout()->setVariables($ui)->setTemplate('layout/content-manager-designer');
     }
 }
