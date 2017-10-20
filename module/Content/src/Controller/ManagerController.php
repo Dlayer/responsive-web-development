@@ -17,6 +17,11 @@ use Zend\View\Model\ViewModel;
 class ManagerController extends AbstractActionController
 {
     /**
+     * @var string Layout to use for action
+     */
+    private $layout = 'layout/content-manager-designer';
+
+    /**
      * Content manager
      *
      * @return \Zend\View\Model\ViewModel
@@ -54,16 +59,6 @@ class ManagerController extends AbstractActionController
     }
 
     /**
-     * Data and state of the currently selected tool
-     *
-     * @return array
-     */
-    private function tool() : array
-    {
-        return [];
-    }
-
-    /**
      * Data array for the navbar
      *
      * @return array
@@ -92,6 +87,16 @@ class ManagerController extends AbstractActionController
             'toolbar' => $this->toolbar($state->getTool())
         ];
 
-        $this->layout()->setVariables($ui)->setTemplate('layout/content-manager-designer');
+        $this->layout()->setVariables($ui)->setTemplate($this->layout);
+    }
+
+    /**
+     * Data and state of the currently selected tool
+     *
+     * @return array
+     */
+    private function tool() : array
+    {
+        return [];
     }
 }
