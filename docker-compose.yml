@@ -9,3 +9,19 @@ services:
       - 80:80
     volumes:
       - .:/app
+    links:
+      - mysql
+    environment:
+        DB_HOST: mysql
+        DB_DATABASE: dlayer_v3
+        DB_USERNAME: dlayer_v3_user
+        DB_PASSWORD: password
+  mysql:
+    image: mysql:5.7
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_DATABASE: dlayer_v3
+      MYSQL_USER: dlayer_v3_user
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: root
