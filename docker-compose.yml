@@ -1,0 +1,29 @@
+version: '3'
+services:
+    app:
+        build:
+            context: .
+            dockerfile: .docker/Dockerfile
+        image: dlayer-v3
+        ports:
+            - 80:80
+        volumes:
+            - .:/app/php
+        links:
+            - mysql
+        environment:
+            DB_HOST: mysql_dlayer_v3
+            DB_DATABASE: dlayer_v3
+            DB_USERNAME: dlayer_v3_user
+            DB_PASSWORD: password_here
+    mysql:
+        image: mysql:5.7
+        ports:
+            - 3306:3306
+        environment:
+            MYSQL_DATABASE: dlayer_v3
+            MYSQL_USER: dlayer_v3_user
+            MYSQL_PASSWORD: password_here
+            MYSQL_ROOT_PASSWORD: root_password_here
+        volumes:
+            - ./app/mysql/data:/var/lib/mysql
