@@ -1,6 +1,6 @@
 FROM php:7.2-apache
 
-COPY . /app
+COPY . /app/php
 COPY .docker/vhost.conf /etc/apache2/sites-available/000-default.conf
 
 WORKDIR /app
@@ -9,5 +9,5 @@ WORKDIR /app
 ##    && chown -R www-data:www-data /app \
 ##    && a2enmod rewrite
 
-RUN chown -R www-data:www-data /app \
+RUN chown -R www-data:www-data /app/php \
     && a2enmod rewrite
